@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/comment/comment",
+    "pages/report/report",
+    "pages/mine/mine",
+    "pages/camera/camera",
+    "pages/wxSearchView/wxSearchView",
+    "pages/searchVideo/searchVideo",
+    "pages/userLogin/userLogin",
+    "pages/chooseBgm/chooseBgm",
+    "pages/userRegist/regist",
+    "pages/template/template"
+  ],
+  "window": {
+    "backgroundColor": "#FFFF",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#87CEFA",
+    "navigationBarTitleText": "vlog",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

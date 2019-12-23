@@ -1,0 +1,44 @@
+<!-- <block wx:if="{{cameraStatus}}">
+    <camera style="width: 100%; height: {{screenHeight-200}}px;" 
+        mode="normal" 
+        device-position="back" 
+        flash="auto" 
+        bindstop="toIndex"
+        binderror="toIndex">
+    </camera>
+</block>
+<block wx:if="{{!cameraStatus}}">
+    <camera style="width: 100%; height: {{screenHeight-200}}px;" 
+    mode="normal" device-position="front"
+        flash="auto" bindstop="toIndex" binderror="toIndex">
+    </camera>
+</block> -->
+<view style="margin-top:120rpx;margin-left: 60rpx;">
+    <view class='btnImg' style="margin-top:120rpx;z-index: 100;position: relative;">
+        <!-- <image bindtap="cameraChange" class='btnImg' src="http://47.102.223.176:8080/images/cameraChange.png"></image> -->
+        <image bindtap="toIndex" class='btnImg' src="http://47.102.223.176:8080/images/back.png"></image>
+    </view>
+    <swiper style="margin-top:-120rpx;height:300rpx;"
+    indicator-dots="true"
+    bindchange="changeImage"
+    >
+        <swiper-item>
+            <view wx:if="{{!videoIsEnd}}" bindtap="takeVideo" style=" margin: 0 auto;" class='btnImg2'><image class='btnImg2' src="http://47.102.223.176:8080/images/videoBtn.png"></image></view>
+            <view wx:if="{{videoIsEnd}}" bindtap="takeVideo" style=" margin: 0 auto;" class='btnImg2'><image class='btnImg2' src="http://47.102.223.176:8080/images/stopRecord.png"></image></view>
+            <view bindtap="takeVideo" style=" margin: 0 auto;" class='btnImg'><image class='btnImg' src="http://47.102.223.176:8080/images/videoSwiper.png"></image></view>
+        </swiper-item>
+        <swiper-item >
+            <view bindtap="takePhoto" style=" margin: 0 auto;" class='btnImg2'><image class='btnImg2' src="http://47.102.223.176:8080/images/photoBtn.png"></image></view>
+            <view bindtap="takePhoto" style=" margin: 0 auto;" class='btnImg'><image class='btnImg' src="http://47.102.223.176:8080/images/photoSwiper.png"></image></view>
+        </swiper-item>
+    </swiper> 
+</view>
+<view wx:if="{{takeVideoImage}}">
+    <image class="image" src="http://47.102.223.176:8080/images/cameraVideo.png" mode="aspectFit" lazy-load="false" binderror=""
+        bindload=""></image>
+</view>
+<view wx:if="{{!takeVideoImage}}">
+    <image class="image" src="http://47.102.223.176:8080/images/cameraPhoto.png" mode="aspectFit" lazy-load="false" binderror=""
+        bindload=""></image>
+</view>
+

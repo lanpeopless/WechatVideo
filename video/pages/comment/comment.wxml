@@ -1,0 +1,71 @@
+<scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" class="list"
+    bindscrolltolower="bindDownLoad" bindscrolltoupper="refresh">
+    <view class="pro-con">
+        <block wx:for="{{list}}" wx:key="{{index}}">
+            <view class="pro-box">
+                <view class="head">
+                    <image class="img" src="{{serverUrl}}{{item.faceImage}}" mode="aspectFit"></image>
+                    <view class="box">
+                        <view class="shead clear">
+                            <view class="names fl">
+                                {{item.nickname}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view
+                    data-fathercommentid="{{item.id}}"  
+                    data-touserid="{{item.fromUserId}}"  
+                    data-tonickname="{{item.nickname}}" 
+                class="addr-info" bindtap="replyComment">
+                    <view class="addr-text" style="word-wrap: break-word;word-break: break-all;">
+                        <view wx:if="{{item.fatherCommentId != null}}">
+                           <view>{{item.nickname}} 回复 {{item.toNickname}}</view>
+                           <view  class="addr-info" style="color:#CDC1C5;border-bottom: 1px dashed #ccc;">
+                            {{item.fatherComment}}
+                           </view>
+                        </view>
+                        {{item.comment}}
+                    </view>
+                </view>
+                <view class="info">
+                    <view class="text">
+                        <text decode="true">{{item.createTime}}</text>
+                    </view>
+                    <!-- <view class="text">
+                        <button class="sharebtn" data-commentId="{{item.id}}" data-commentUserName="{{item.userName}}"
+                            bindtap="bindReply">回复</button>
+                    </view> -->
+                    <view wx:if="{{item.fromUserId == userId}}" class="status text fr">
+                        <text class="delete" decode="true" bindtap='deleteComment'
+                            data-CommentId="{{item.id}}">删除</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</scroll-view>
+<form bindsubmit="submitForm" report-submit="true">
+    <view class="release">
+        <view wx:if="{{reply}}">
+            <view class="replyinfo1">
+                回复<text class="text">{{replyUserName}}</text>
+                <button class="cancel" bindtap="cancleReply">取消回复</button>
+            </view>
+            <view class="replyinfo2">
+                <textarea placeholder-class="input_null" fixed="true" maxlength="-1" show-confirm-bar="false"
+                    cursor-spacing="15" auto-height="true" placeholder="{{placeholder}}" value="{{comment}}" name="comment"></textarea>
+                <button form-type="submit" class="submit">发送</button>
+            </view>    
+        </view>
+        <view wx:if="{{!reply}}">
+            <view class="replyinfo2">
+                <textarea placeholder-class="input_null" fixed="true" maxlength="-1" show-confirm-bar="false"
+                    cursor-spacing="15" auto-height="true" placeholder="{{placeholder}}" value="{{comment}}"
+                    name="comment"></textarea>
+                <button form-type="submit" class="submit">发送</button>
+            </view>
+        </view>
+          
+    </view>
+</form>
