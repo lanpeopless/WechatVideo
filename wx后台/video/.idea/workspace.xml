@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1e53b1f7-0b13-4328-a607-60dd99a512a8" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/videos-common/target/" />
+    <ignored path="$PROJECT_DIR$/videos-mapper/target/" />
+    <ignored path="$PROJECT_DIR$/videos-mini-api/target/" />
+    <ignored path="$PROJECT_DIR$/videos-pojo/target/" />
+    <ignored path="$PROJECT_DIR$/videos-service/target/" />
+    <ignored path="$PROJECT_DIR$/mybatis-generatorConfig/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="云服务器MariaDB" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="云服务器MariaDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="33" column="59" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>-dev</find>
+      <find>MyMapper</find>
+      <find>common</find>
+      <find>IMoocJSONResult</find>
+      <find>Integer</find>
+      <find />
+      <find>query</find>
+      <find>createFolder</find>
+      <find>fileName</find>
+      <find>BaseResultMap</find>
+      <find>table</find>
+      <find>开发文件夹</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>JSONResult</replace>
+      <replace>String</replace>
+      <replace>form</replace>
+      <replace>table video_wx.</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/videos-common</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/mapper/VideoMapper.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/service/VideoService.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/service/impl/VideoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/videos-common/src/main/java/com/Jonas/utils/PagedResult.java" />
+        <option value="$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/PagedResult.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/SearchRecordsMapper.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/SearchRecordsMapper.xml" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/interceptor/MiniInterceptor.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/UserLikeVideo.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/UserLikeVideoMapper.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/dto/likeVideoDTO.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/dto/LikeVideoDTO.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/UserLikeVideoMapper.xml" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/UserInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/dto/UserDTO.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/UsersFansMapper.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/UsersFansMapper.xml" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/vo/VideoVO.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/VideoMapper.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/VideoMapper.xml" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/UserService.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/vo/UserInfoVO.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/CommentsMapper.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/dto/VideoDTO.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/VideoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/VideoService.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/VideoController.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/Comments.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3f840fd6-d558-4e67-a65e-86e03ee0970f/console.sql" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/CommentsMapper.xml" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/vo/CommentVO.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/UserInfoMapper.java" />
+        <option value="$PROJECT_DIR$/videos-mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/videos-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/videos-service/pom.xml" />
+        <option value="$PROJECT_DIR$/videos-mini-api/pom.xml" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/WarStartApplication.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WarStartApplication.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/BasicController.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/test.yml" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/videos-common/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/BgmServiceImpl.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4e6e4e67-bbf1-4755-927d-84678c54b5de/console.sql" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="/Library/Maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="/Library/Maven/apache-maven-3.6.0/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="videos-mini-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="videos-mini-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1366" />
+    <option name="height" value="732" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="videos-mini-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="videos-mini-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="videos-mini-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="videos-mini-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="oracle&#10;mysql&#10;mariadb" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554574380385" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.data.extractors.current.id" value="SQL Inserts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/videos-mini-api/src/main/resources" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.38821328" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/videos-mini-api/src/main/resources" />
+      <recent name="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/common/utils" />
+      <recent name="$PROJECT_DIR$/mybatis-generatorConfig/src/main/java/com/imooc/com" />
+      <recent name="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/common" />
+      <recent name="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.imooc.vo" />
+      <recent name="com.imooc.controller" />
+      <recent name="com.imooc.pojo" />
+      <recent name="com.imooc.mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/videos-pojo/src/main/jjj" />
+      <recent name="$PROJECT_DIR$/videos-pojo/src/main" />
+      <recent name="$PROJECT_DIR$/mybatis-generatorConfig/target/classes/com" />
+      <recent name="$PROJECT_DIR$/mybatis-generatorConfig/src/main/resources" />
+      <recent name="$PROJECT_DIR$/mybatis-generatorConfig" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.video">
+    <configuration name="GeneratorDisplay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jonas.mybatis.utils.GeneratorDisplay" />
+      <module name="mybatis-generatorConfig" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jonas.mybatis.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="video" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="videos-mini-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jonas.Application" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8 (2)" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.GeneratorDisplay" />
+      <item itemvalue="Spring Boot.video" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GeneratorDisplay" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e53b1f7-0b13-4328-a607-60dd99a512a8" name="Default Changelist" comment="" />
+      <created>1549447503074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549447503074</updated>
+      <workItem from="1549447504802" duration="10207000" />
+      <workItem from="1549460965638" duration="22596000" />
+      <workItem from="1549947474306" duration="1358000" />
+      <workItem from="1550136734002" duration="2406000" />
+      <workItem from="1550481495744" duration="14066000" />
+      <workItem from="1551167388500" duration="1010000" />
+      <workItem from="1551713092614" duration="2812000" />
+      <workItem from="1552113313836" duration="22146000" />
+      <workItem from="1552570739422" duration="42086000" />
+      <workItem from="1553166838248" duration="1036000" />
+      <workItem from="1553175101476" duration="20095000" />
+      <workItem from="1553654202648" duration="12000" />
+      <workItem from="1553654219441" duration="29545000" />
+      <workItem from="1553952662734" duration="24527000" />
+      <workItem from="1554135591010" duration="7166000" />
+      <workItem from="1554308412379" duration="4430000" />
+      <workItem from="1554362566554" duration="397000" />
+      <workItem from="1554364362976" duration="6693000" />
+      <workItem from="1554391323509" duration="153000" />
+      <workItem from="1554573455232" duration="705000" />
+      <workItem from="1554574862000" duration="922000" />
+      <workItem from="1554627213477" duration="344000" />
+      <workItem from="1555004689664" duration="471000" />
+      <workItem from="1555231056908" duration="894000" />
+      <workItem from="1555243032955" duration="559000" />
+      <workItem from="1556441819896" duration="230000" />
+      <workItem from="1556443729841" duration="1625000" />
+      <workItem from="1556565862531" duration="742000" />
+      <workItem from="1556729928708" duration="2082000" />
+      <workItem from="1556732156543" duration="832000" />
+      <workItem from="1556777273494" duration="3661000" />
+      <workItem from="1556783295208" duration="1801000" />
+      <workItem from="1556789983622" duration="598000" />
+      <workItem from="1557549973688" duration="367000" />
+      <workItem from="1557741097288" duration="506000" />
+      <workItem from="1557794190276" duration="617000" />
+      <workItem from="1557911590210" duration="969000" />
+      <workItem from="1557998342299" duration="148000" />
+      <workItem from="1558009423892" duration="1410000" />
+      <workItem from="1558011726643" duration="5713000" />
+      <workItem from="1558078943175" duration="203000" />
+      <workItem from="1558083280053" duration="3021000" />
+      <workItem from="1558336527122" duration="1272000" />
+      <workItem from="1558682732885" duration="1071000" />
+      <workItem from="1558965724261" duration="1391000" />
+      <workItem from="1559096573238" duration="798000" />
+      <workItem from="1559101293820" duration="3475000" />
+      <workItem from="1559448989643" duration="981000" />
+      <workItem from="1563626377749" duration="205000" />
+      <workItem from="1563688105409" duration="378000" />
+      <workItem from="1565075990207" duration="286000" />
+      <workItem from="1566956695198" duration="692000" />
+      <workItem from="1567521374958" duration="671000" />
+      <workItem from="1567783016682" duration="2002000" />
+      <workItem from="1567941084734" duration="77000" />
+      <workItem from="1568104897851" duration="1304000" />
+      <workItem from="1568299734927" duration="110000" />
+      <workItem from="1568558686783" duration="347000" />
+      <workItem from="1568628365434" duration="284000" />
+      <workItem from="1568683164301" duration="458000" />
+      <workItem from="1569145866159" duration="4573000" />
+      <workItem from="1569391954431" duration="1175000" />
+      <workItem from="1569856373508" duration="1207000" />
+      <workItem from="1573562317823" duration="1598000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="265516000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3090129" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.32961586" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="2" weight="0.32961586" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32866243" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.545108" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.38289964" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" order="10" weight="0.32961586" />
+      <window_info anchor="bottom" id="Spring" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.45108005" />
+      <window_info anchor="bottom" id="Docker" order="13" weight="0.32909784" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3278272" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
+      <window_info anchor="bottom" id="Version Control" order="17" />
+      <window_info anchor="bottom" id="Database Console" order="18" visible="true" weight="0.49047014" />
+      <window_info anchor="bottom" id="Duplicate detector" order="19" weight="0.32961586" />
+      <window_info anchor="bottom" id="SQL Generator" order="20" weight="0.5349428" />
+      <window_info anchor="right" id="Module Dependencies" order="0" visible="true" weight="0.22961374" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.33333334" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.16452074" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28397712" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.32961586" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="2" weight="0.32961586" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32866243" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.545108" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.38289964" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" order="10" weight="0.32961586" />
+      <window_info anchor="bottom" id="Spring" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.45108005" />
+      <window_info anchor="bottom" id="Docker" order="13" weight="0.32909784" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3278272" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
+      <window_info anchor="bottom" id="Version Control" order="17" />
+      <window_info anchor="bottom" id="Database Console" order="18" weight="0.3761118" />
+      <window_info anchor="bottom" id="Duplicate detector" order="19" weight="0.32961586" />
+      <window_info anchor="bottom" id="SQL Generator" order="20" weight="0.5349428" />
+      <window_info anchor="right" id="Module Dependencies" order="0" visible="true" weight="0.22961374" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.33333334" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.16452074" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/UserLikeVideoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/Comments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/utils/RedisOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-generatorConfig/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+          <folding>
+            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#7;n#dependencies#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.12.RELEASE/spring-boot-autoconfigure-1.5.12.RELEASE.jar!/org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="239" column="24" selection-start-line="239" selection-start-column="24" selection-end-line="239" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e6e4e67-bbf1-4755-927d-84678c54b5de/schema/information_schema/view/VIEWS" />
+    <entry file="das://4e6e4e67-bbf1-4755-927d-84678c54b5de/schema/information_schema/view/CHARACTER_SETS" />
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WarStartApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-generatorConfig/src/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="31" column="106" selection-start-line="31" selection-start-column="106" selection-end-line="31" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/VideoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="69" column="45" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#selectAllVideo#0;class#VideoController#0" />
+            <element signature="method#selectVideoByCondition#0;class#VideoController#0" />
+            <element signature="method#changeVideoLikeStatus#0;class#VideoController#0" />
+            <element signature="method#getPersonalVideo#0;class#VideoController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/test.yml" />
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/BgmController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3f840fd6-d558-4e67-a65e-86e03ee0970f/schema/mysql/table/user" />
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/testController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/Swagger2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/utils/MD5Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/UserInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="67" />
+          <folding>
+            <element signature="n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#select#1;n#mapper#0;n#!!top" />
+            <element signature="n#select#2;n#mapper#0;n#!!top" />
+            <element signature="n#update#1;n#mapper#0;n#!!top" />
+            <element signature="n#update#2;n#mapper#0;n#!!top" />
+            <element signature="n#update#3;n#mapper#0;n#!!top" />
+            <element signature="n#update#4;n#mapper#0;n#!!top" />
+            <element signature="n#update#5;n#mapper#0;n#!!top" />
+            <element signature="n#update#6;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/UserInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/BgmMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="56" />
+          <folding>
+            <element signature="n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/BgmServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/BgmMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3f840fd6-d558-4e67-a65e-86e03ee0970f/schema/video_wx/table/user_info" />
+    <entry file="file://$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/FFMpegTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/FetchVideoCover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1097">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/Sid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e6e4e67-bbf1-4755-927d-84678c54b5de/schema/video_wx/table/user_info" />
+    <entry file="das://4e6e4e67-bbf1-4755-927d-84678c54b5de/schema/video_wx/table/bgm" />
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="40" column="44" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/Id.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/BasicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="method#uploadFaceImage#0;class#UserController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4e6e4e67-bbf1-4755-927d-84678c54b5de/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/9952f84168357682f88202f6c86e4054/Message/MessageTemp/ab0accf0b9a460b2f94e0cf82ea20921/File/AuthenticationServiceImpl.java" />
+    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/9952f84168357682f88202f6c86e4054/Message/MessageTemp/ab0accf0b9a460b2f94e0cf82ea20921/File/AuthenticationService.java" />
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/utils/FetchVideoCover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/utils/MergeVideoMp3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/utils/FFMpegTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="71" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/application-prod.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-pojo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="24" selection-start-line="24" selection-end-line="169" />
+          <folding>
+            <element signature="n#dependencies#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mapper/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>videos-mini-api:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.38821328" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24134706" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8 (2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>imooc-videos-dev-mini-api</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24134706" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.29</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.38821328" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

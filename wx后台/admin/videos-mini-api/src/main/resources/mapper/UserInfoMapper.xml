@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jonas.mapper.UserInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.jonas.pojo.UserInfo" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="face_image" property="faceImage" jdbcType="VARCHAR" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+    <result column="fans_counts" property="fansCounts" jdbcType="INTEGER" />
+    <result column="follow_counts" property="followCounts" jdbcType="INTEGER" />
+    <result column="receive_like_counts" property="receiveLikeCounts" jdbcType="INTEGER" />
+  </resultMap>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from user_info
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.jonas.pojo.UserInfo" >
+    insert into user_info (id, username, password, 
+      face_image, nickname, fans_counts, 
+      follow_counts, receive_like_counts)
+    values (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{faceImage,jdbcType=VARCHAR}, #{nickname,jdbcType=VARCHAR}, #{fansCounts,jdbcType=INTEGER}, 
+      #{followCounts,jdbcType=INTEGER}, #{receiveLikeCounts,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.jonas.pojo.UserInfo" >
+    update user_info
+    set username = #{username,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      face_image = #{faceImage,jdbcType=VARCHAR},
+      nickname = #{nickname,jdbcType=VARCHAR},
+      fans_counts = #{fansCounts,jdbcType=INTEGER},
+      follow_counts = #{followCounts,jdbcType=INTEGER},
+      receive_like_counts = #{receiveLikeCounts,jdbcType=INTEGER}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select id, username, password, face_image, nickname, fans_counts, follow_counts, 
+    receive_like_counts
+    from user_info
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, username, password, face_image, nickname, fans_counts, follow_counts, 
+    receive_like_counts
+    from user_info
+  </select>
+  <select id="selectOne" resultMap="BaseResultMap" parameterType="string">
+    select id, username, password, face_image, nickname, fans_counts, follow_counts,
+           receive_like_counts
+    from user_info
+    where username=#{username，jdbcType=VARCHAR}
+  </select>
+  <!--增减获赞数量-->
+  <update id="addReceiveLikeCount" parameterType="java.lang.String">
+    update user_info
+    set receive_like_counts=receive_like_counts+1
+    where id=#{userId}
+  </update>
+  <update id="reduceReceiveLikeCount" parameterType="java.lang.String">
+    update user_info
+    set receive_like_counts=receive_like_counts-1
+    where id=#{userId}
+  </update>
+  <!--粉丝数量的增减-->
+  <update id="addFansCount" parameterType="java.lang.String">
+    update user_info
+    set fans_counts=fans_counts+1
+    where id=#{userId}
+  </update>
+  <update id="reduceFansCount" parameterType="java.lang.String">
+    update user_info
+    set fans_counts=fans_counts-1
+    where id=#{userId}
+  </update>
+  <!--关注数的增减-->
+  <update id="addFollowCount" parameterType="java.lang.String">
+    update user_info
+    set follow_counts=follow_counts+1
+    where id=#{userId}
+  </update>
+  <update id="reduceFollowCount" parameterType="java.lang.String">
+    update user_info
+    set follow_counts=follow_counts-1
+    where id=#{userId}
+  </update>
+
+  <select id="getUserInfoByCondition" parameterType="com.jonas.pojo.UserInfo" resultMap="BaseResultMap">
+    select id, username, face_image, nickname, fans_counts, follow_counts,
+    receive_like_counts
+    from user_info
+    <where>
+      <if test="username!=null">
+        and username like '%${username}%'
+      </if>
+      <if test="nickname!=null">
+        and nickname like '%${nickname}%'
+      </if>
+      <if test="id!=null">
+        and id=#{id}
+      </if>
+    </where>
+  </select>
+</mapper>

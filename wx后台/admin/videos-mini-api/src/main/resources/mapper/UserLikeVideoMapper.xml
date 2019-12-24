@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jonas.mapper.UserLikeVideoMapper" >
+  <resultMap id="BaseResultMap" type="com.jonas.pojo.UserLikeVideo" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="video_id" property="videoId" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from user_like_video
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.jonas.pojo.UserLikeVideo" >
+    insert into user_like_video (id, user_id, video_id
+      )
+    values (#{id,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{videoId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.jonas.pojo.UserLikeVideo" >
+    update user_like_video
+    set user_id = #{userId,jdbcType=VARCHAR},
+      video_id = #{videoId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select id, user_id, video_id
+    from user_like_video
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, user_id, video_id
+    from user_like_video
+  </select>
+  <delete id="deleteByUserIdAndVideoId" parameterType="com.jonas.pojo.UserLikeVideo">
+    delete from user_like_video
+    where video_id=#{videoId} and user_id=#{userId}
+  </delete>
+  <select id="selectByUserIdAndVideoId" parameterType="com.jonas.pojo.UserLikeVideo" resultMap="BaseResultMap">
+    select id,user_id,video_id
+    from user_like_video
+    where  user_id=#{userId} and video_id=#{videoId}
+  </select>
+</mapper>

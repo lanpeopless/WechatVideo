@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jonas.mapper.CommentsMapper" >
+  <resultMap id="BaseResultMap" type="com.jonas.pojo.Comments" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="video_id" property="videoId" jdbcType="VARCHAR" />
+    <result column="from_user_id" property="fromUserId" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="comment" property="comment" jdbcType="LONGVARCHAR" />
+    <result column="father_comment_id" property="fatherCommentId" jdbcType="VARCHAR" />
+    <result column="to_user_id" property="toUserId" jdbcType="VARCHAR" />
+    <result column="to_nickname" property="toNickname" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="CommentVO" type="com.jonas.vo.CommentVO" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="video_id" property="videoId" jdbcType="VARCHAR" />
+    <result column="from_user_id" property="fromUserId" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="comment" property="comment" jdbcType="LONGVARCHAR" />
+    <result column="face_image" property="faceImage" jdbcType="VARCHAR" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+    <result column="father_comment_id" property="fatherCommentId" jdbcType="VARCHAR" />
+    <result column="to_user_id" property="toUserId" jdbcType="VARCHAR" />
+    <result column="to_nickname" property="toNickname" jdbcType="VARCHAR" />
+    <result column="father_comment" property="fatherComment" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from comments
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.jonas.pojo.Comments" >
+    insert into comments (id, video_id, from_user_id, 
+      create_time, comment,father_comment_id,to_user_id)
+    values (#{id,jdbcType=VARCHAR}, #{videoId,jdbcType=VARCHAR}, #{fromUserId,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{comment,jdbcType=LONGVARCHAR}
+             , #{fatherCommentId,jdbcType=VARCHAR}, #{toUserId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.jonas.pojo.Comments" >
+    update comments
+    set video_id = #{videoId,jdbcType=VARCHAR},
+      from_user_id = #{fromUserId,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      comment = #{comment,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select id, video_id, from_user_id, create_time, comment,father_comment_id,to_user_id
+    from comments
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, video_id, from_user_id, create_time, comment,father_comment_id,to_user_id
+    from comments
+  </select>
+  <!--按视频和时间的倒叙查评论-->
+  <select id="getCommentByVideoId" parameterType="java.lang.String" resultMap="CommentVO">
+    select c.*,u.face_image,u.nickname,(select tu.nickname from user_info tu where id=c.to_user_id) as to_nickname
+            ,(select comment
+              from comments
+              where id in (
+                select father_comment_id
+                from comments co,user_info u
+                where (u.id=co.from_user_id and co.id=c.id)
+              )) as father_comment
+    from comments c,user_info u
+    where (u.id=c.from_user_id and video_id=#{videoId})
+    order by c.id desc ,c.father_comment_id asc
+  </select>
+
+</mapper>

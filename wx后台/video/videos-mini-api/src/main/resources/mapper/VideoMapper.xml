@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jonas.mapper.VideoMapper" >
+  <resultMap id="BaseResultMap" type="com.jonas.pojo.Video" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="audio_id" property="audioId" jdbcType="VARCHAR" />
+    <result column="video_desc" property="videoDesc" jdbcType="VARCHAR" />
+    <result column="video_path" property="videoPath" jdbcType="VARCHAR" />
+    <result column="video_seconds" property="videoSeconds" jdbcType="REAL" />
+    <result column="video_width" property="videoWidth" jdbcType="INTEGER" />
+    <result column="video_height" property="videoHeight" jdbcType="INTEGER" />
+    <result column="cover_path" property="coverPath" jdbcType="VARCHAR" />
+    <result column="like_cunts" property="likeCunts" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="VideoVo" type="com.jonas.vo.VideoVO" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="audio_id" property="audioId" jdbcType="VARCHAR" />
+    <result column="video_desc" property="videoDesc" jdbcType="VARCHAR" />
+    <result column="video_path" property="videoPath" jdbcType="VARCHAR" />
+    <result column="video_seconds" property="videoSeconds" jdbcType="REAL" />
+    <result column="video_width" property="videoWidth" jdbcType="INTEGER" />
+    <result column="video_height" property="videoHeight" jdbcType="INTEGER" />
+    <result column="cover_path" property="coverPath" jdbcType="VARCHAR" />
+    <result column="like_cunts" property="likeCunts" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="face_image" property="faceImage" jdbcType="VARCHAR" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from video
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.jonas.pojo.Video" >
+    insert into video (id, user_id, audio_id, 
+      video_desc, video_path, video_seconds, 
+      video_width, video_height, cover_path, 
+      like_cunts, status, create_time
+      )
+    values (#{id,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{audioId,jdbcType=VARCHAR}, 
+      #{videoDesc,jdbcType=VARCHAR}, #{videoPath,jdbcType=VARCHAR}, #{videoSeconds,jdbcType=REAL}, 
+      #{videoWidth,jdbcType=INTEGER}, #{videoHeight,jdbcType=INTEGER}, #{coverPath,jdbcType=VARCHAR}, 
+      #{likeCunts,jdbcType=BIGINT}, #{status,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.jonas.pojo.Video" >
+    update video
+    set user_id = #{userId,jdbcType=VARCHAR},
+      audio_id = #{audioId,jdbcType=VARCHAR},
+      video_desc = #{videoDesc,jdbcType=VARCHAR},
+      video_path = #{videoPath,jdbcType=VARCHAR},
+      video_seconds = #{videoSeconds,jdbcType=REAL},
+      video_width = #{videoWidth,jdbcType=INTEGER},
+      video_height = #{videoHeight,jdbcType=INTEGER},
+      cover_path = #{coverPath,jdbcType=VARCHAR},
+      like_cunts = #{likeCunts,jdbcType=BIGINT},
+      status = #{status,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select id, user_id, audio_id, video_desc, video_path, video_seconds, video_width, 
+    video_height, cover_path, like_cunts, status, create_time
+    from video
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, user_id, audio_id, video_desc, video_path, video_seconds, video_width, 
+    video_height, cover_path, like_cunts, status, create_time
+    from video
+  </select>
+  <!--查询所有的视频带用户呢称-->
+  <select id="selectAllVideoVo" resultMap="VideoVo">
+    select v.*,u.face_image,u.nickname
+    from video v,user_info u
+    where u.id=v.user_id
+    order by v.id
+  </select>
+  <!--按视频描述进行查询-->
+  <select id="selectVideoVoByDesc" parameterType="java.lang.String" resultMap="VideoVo">
+    select v.*,u.face_image,u.nickname
+    from video v,user_info u
+    where v.video_desc like '%${videoDesc}%'
+    and v.user_id = u.id
+    order by v.id
+  </select>
+
+  <!--增减视频获赞数量-->
+  <update id="addVideoLikeCount" parameterType="java.lang.String">
+    update video
+    set like_cunts=like_cunts+1
+    where id=#{videoId}
+  </update>
+  <update id="reduceVideoLikeCount">
+    update video
+    set like_cunts=like_cunts-1
+    where id=#{videoId}
+  </update>
+  <!--查询我的作品-->
+  <select id="selectMyVideo" parameterType="java.lang.String" resultMap="VideoVo">
+    select v.*,u.face_image,u.nickname
+    from video v,user_info u
+    where v.user_id=#{userId} and u.id=v.user_id
+    order by v.create_time desc
+  </select>
+  <!--查询我喜欢的-->
+  <select id="selectMyLikeVideo" parameterType="java.lang.String" resultMap="VideoVo">
+    select v.*,u.face_image,u.nickname
+    from video v,user_info u
+    where v.id in (select video_id
+                 from user_like_video
+                 where user_id=#{userId}) and u.id=v.user_id
+    order by v.create_time desc
+  </select>
+  <!--查询我关注人的作品-->
+  <select id="selectMyFollowVideo" parameterType="java.lang.String" resultMap="VideoVo">
+    select v.*,u.face_image,u.nickname
+    from video v,user_info u
+    where v.user_id in (select user_id
+                      from users_fans
+                      where fan_id=#{userId}) and u.id=v.user_id
+    order by v.create_time desc
+  </select>
+
+
+</mapper>
