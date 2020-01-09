@@ -5,9 +5,11 @@ App({
   // serverUrl:"http://10.30.20.211:8081",// 学校内网
   // serverUrl:"http://192.168.43.239:8081",// 手机网络
   // serverUrl:"http://192.168.0.101:8081",// 屋子里
-  // serverUrl:"http://localhost:8081",// 本机测试地址
+  serverUrl:"http://localhost:8081",// 本机测试地址
   // serverUrl:"http://47.102.223.176:8080/video",// 正式环境无域名地址
-  serverUrl: "http://www.totoros.com.cn/video",// 正式环境域名地址
+  // serverUrl: "http://www.totoros.com.cn",// 正式环境域名地址
+
+  videoUrl:"http://www.totoros.com.cn/source",
   
   userInfo:null,
 

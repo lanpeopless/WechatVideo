@@ -16,6 +16,7 @@ Page({
     pixelRatio:1,
     like: false,
     serverUrl: "",
+    videoUrl: "",
     showFullScreenBtn:false,
     isCanPlay:true,
     isOpenCamera:false,
@@ -90,6 +91,7 @@ Page({
       arrIndex=0;
     }
     var serverUrl = app.serverUrl;
+    var videoUrl = app.videoUrl;
     that.setData({
       screenWidth: screenWidth,
       screenHeight: screenHeight,
@@ -101,6 +103,7 @@ Page({
         that.setData({
           videoList:JSON.parse(param.mineVideo),
           serverUrl:serverUrl,
+          videoUrl:videoUrl,
           arrIndex:arrIndex
         })
       }else {
@@ -169,6 +172,7 @@ Page({
     var videoCreatorId = param.currentTarget.dataset.videocreatorid;
     var videoId = param.currentTarget.dataset.videoid;
     var serverUrl = app.serverUrl;
+    var videoUrl = app.videoUrl;
     var userInfo = app.userInfo;
     if (userInfo != null) {
       if (userInfo.id != videoCreatorId) {
@@ -213,6 +217,7 @@ Page({
   likeVideo:function(param){
     var that = this;
     var serverUrl = app.serverUrl;
+    var videoUrl = app.videoUrl;
     var userInfo = app.userInfo;
     
     var videoCreatorId = param.currentTarget.dataset.videocreatorid;
@@ -292,6 +297,7 @@ Page({
     var videoId = param.currentTarget.dataset.videoid;
     var userInfo = app.userInfo;
     var serverUrl = app.serverUrl;
+    var videoUrl = app.videoUrl;
     wx.showActionSheet({
       itemList: ['保存该视频','举报违规'],
       success(res) {
@@ -395,6 +401,7 @@ Page({
     const page = that.data.page;
     const pageSize = that.data.pageSize;
     const serverUrl = app.serverUrl;
+    const videoUrl = app.videoUrl;
     var userInfo = app.userInfo;
     var currentUserId = null;
     if(userInfo!=null){
@@ -431,6 +438,7 @@ Page({
               that.setData({
                 videoList:videoListOld.concat(videoList),
                 serverUrl:serverUrl,
+                videoUrl:videoUrl,
                 page:page,
                 records:records,
                 totalPage:total,
@@ -472,6 +480,8 @@ Page({
     const page = that.data.page;
     const pageSize = that.data.pageSize;
     const serverUrl = app.serverUrl;
+    const videoUrl = app.videoUrl;
+
     var userInfo = app.userInfo;
     var currentUserId = null;
     if(userInfo!=null){
@@ -514,6 +524,7 @@ Page({
               that.setData({
                 videoList:videoListOld.concat(videoList),
                 serverUrl:serverUrl,
+                videoUrl: videoUrl,
                 page:page,
                 records:records,
                 totalPage:total,

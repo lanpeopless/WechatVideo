@@ -1,11 +1,11 @@
 <template name="mytemp">
     <view class="box">
         <button class='btn' bindtap='toIndex'>
-            <image class='btnImg' src="http://47.102.223.176:8080/images/home.png"></image>
+            <image class='btnImg' src="http://47.102.223.176/images/home.png"></image>
             <view>首页</view>
         </button>
         <button class='btn' bindtap='toCamera'>
-            <image class='btnImg' src="http://47.102.223.176:8080/images/addVideo.png"></image>
+            <image class='btnImg' src="http://47.102.223.176/images/addVideo.png"></image>
             <!-- <block wx:if="{{isOpenCamera}}"> -->
 
             <!-- </block> -->
@@ -14,7 +14,7 @@
             <view>拍摄</view>
         </button>
         <button class='btn' bindtap='toMine'>
-            <image class='btnImg' src="http://47.102.223.176:8080/images/user.png"></image>
+            <image class='btnImg' src="http://47.102.223.176/images/user.png"></image>
             <view>个人中心</view>
         </button>
     </view>

@@ -5,7 +5,8 @@
         <artifactId>videos-dev</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <packaging>war</packaging>
+<!--    <packaging>war</packaging>-->
+    <packaging>jar</packaging>
     <artifactId>videos-mini-api</artifactId>
     <dependencies>
         <dependency>
@@ -18,5 +19,23 @@
             <artifactId>javax.servlet-api</artifactId>
             <scope>provided</scope>
         </dependency>
+
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.jonas.Application</mainClass>
+                </configuration>
+                <goals>
+                    <goal>repackage</goal><!--可以把依赖的包都打包到生成的Jar包中-->
+                </goals>
+            </plugin>
+
+        </plugins>
+
+    </build>
 </project>

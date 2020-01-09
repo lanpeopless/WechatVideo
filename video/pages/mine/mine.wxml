@@ -6,10 +6,10 @@
       <label class="nickname">{{nickname}}
       <block wx:if="{{!likeUserStatus}}">
         <!-- <button size="mini" class="follow1" bindtap="changeUserLikeStatus">关注</button> -->
-        <image class="follow" src="http://47.102.223.176:8080/images/likeUser.png" bindtap="changeUserLikeStatus"></image>
+        <image class="follow" src="http://47.102.223.176/images/likeUser.png" bindtap="changeUserLikeStatus"></image>
       </block>
       <block wx:if="{{likeUserStatus}}">
-        <image class="follow" src="http://47.102.223.176:8080/images/unLikeUser.png" bindtap="changeUserLikeStatus"></image>
+        <image class="follow" src="http://47.102.223.176/images/unLikeUser.png" bindtap="changeUserLikeStatus"></image>
         <!-- <button size="mini" class="follow2" bindtap="changeUserLikeStatus">✔️</button> -->
       </block>
     </label>

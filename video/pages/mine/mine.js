@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    faceUrl: "http://47.102.223.176:8080/images/noneface.png",
+    faceUrl: "http://47.102.223.176/images/noneface.png",
     creatorId:'',
     faceImageArr:[],
     fansCounts:0,
@@ -209,7 +209,7 @@ Page({
           })
           var faceUrl;
           if (userInfo.faceImage==null){
-            faceUrl = 'http://47.102.223.176:8080/images/noneface.png';
+            faceUrl = 'http://47.102.223.176/images/noneface.png';
           }else{
             faceUrl = serverUrl + userInfo.faceImage;
           }
@@ -282,7 +282,7 @@ Page({
           })
           var faceUrl;
           if (creatorInfo.faceImage==null){
-            faceUrl = 'http://47.102.223.176:8080/images/noneface.png';
+            faceUrl = 'http://47.102.223.176/images/noneface.png';
           }else{
             faceUrl = serverUrl + creatorInfo.faceImage;
           }

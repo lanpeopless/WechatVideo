@@ -1,95 +1,81 @@
 <!--index.wxml-->
 <import src="/pages/template/template"></import>
-<swiper
-vertical="true"
-style="width:{{screenWidth}}px;height:{{screenHeight}}px;"
-bindchange="swiperChange"
-current="{{arrIndex}}"
->
-<block wx:for="{{videoList}}" wx:key="id" class="item-container" style="margin-bottom: 120rpx;">
+<swiper vertical="true" style="width:{{screenWidth}}px;height:{{screenHeight}}px;" bindchange="swiperChange" current="{{arrIndex}}">
+  <block wx:for="{{videoList}}" wx:key="id" class="item-container" style="margin-bottom: 120rpx;">
     <swiper-item class="" item-id="{{index}}">
-    <block wx:if="{{!item.check}}">
+      <block wx:if="{{!item.check}}">
         <view style="width:{{screenWidth}}px;height:{{screenHeight}}px;" class="back-img">
-            <view class="container-image">
-                <cover-image class="search" src="http://47.102.223.176:8080/images/search.png" bindtap="search"></cover-image>
-                <!-- 使用translate进行调整样式 真机调试搜索框跳动 -->
-                <cover-view class="videoDesc">{{item.videoDesc}}</cover-view>
-                <image data-id="{{item.id}}" src="{{serverUrl}}{{item.coverPath}}" style="width:100%;height:100%;" mode="aspectFit"
-                    bindtap="showVideoInfo" data-arrindex="{{index}}">
-                </image>
-            
-<!--------------------------------------------------------------------------------------------------------------------------->
-            </view>
+          <view class="container-image">
+            <cover-image class="search" src="http://47.102.223.176/images/search.png" bindtap="search"></cover-image>
+            <!-- 使用translate进行调整样式 真机调试搜索框跳动 -->
+            <cover-view class="videoDesc">{{item.videoDesc}}</cover-view>
+            <image data-id="{{item.id}}" src="{{videoUrl}}{{item.coverPath}}" style="width:100%;height:100%;" mode="aspectFit" bindtap="showVideoInfo" data-arrindex="{{index}}">
+            </image>
+
+            <!--------------------------------------------------------------------------------------------------------------------------->
+          </view>
 
 
-            <view class="container">
-                <view class="desc" style="margin-top: -{{screenHeight*9/5}}rpx;">
-                    <view class="faceName">
-                        <image data-videoCreatorId="{{item.userId}}" class="myface" src="{{serverUrl}}{{item.faceImage}}" bindtap="intoUserInfo"></image>
-                        <image wx:if="{{!item.likeUser}}" data-videoCreatorId="{{item.userId}}" data-videoId="{{item.id}}" class="addBtn" src="http://47.102.223.176:8080/images/add.png" bindtap="likeUser"></image>
-                        <block wx:if="{{!item.likeVildeo}}">
-                            <image data-likeStatus="{{item.likeVildeo}}" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}"
-                                 class="other" src="http://47.102.223.176:8080/images/heart.png" bindtap="likeVideo"></image>
-                        </block>
-                        <block wx:if="{{item.likeVildeo}}">
-                            <image data-likeStatus="{{item.likeVildeo}}" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}"
-                                 class="other" src="http://47.102.223.176:8080/images/heart-red.png" bindtap="likeVideo"></image>
-                        </block>
-                        <image class="other" data-videoId="{{item.id}}" src="http://47.102.223.176:8080/images/comments.png" bindtap="commentVideo"></image>
-                        <button class="shareBtn" open-type="share"><image class="other" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" src="http://47.102.223.176:8080/images/share.png" bindtap="shareVideo"></image></button>
-                        <image class="other" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}"  data-videopath="{{serverUrl}}{{item.videoPath}}" src="http://47.102.223.176:8080/images/info-circle-fill.png" bindtap="searchVideoInfo"></image>
-                    </view>
-                </view>
+          <view class="container">
+            <view class="desc" style="margin-top: -{{screenHeight*9/5}}rpx;">
+              <view class="faceName">
+                <image data-videoCreatorId="{{item.userId}}" class="myface" src="{{videoUrl}}{{item.faceImage}}" bindtap="intoUserInfo"></image>
+                <image wx:if="{{!item.likeUser}}" data-videoCreatorId="{{item.userId}}" data-videoId="{{item.id}}" class="addBtn" src="http://47.102.223.176/images/add.png" bindtap="likeUser"></image>
+                <block wx:if="{{!item.likeVildeo}}">
+                  <image data-likeStatus="{{item.likeVildeo}}" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" class="other" src="http://47.102.223.176/images/heart.png" bindtap="likeVideo"></image>
+                </block>
+                <block wx:if="{{item.likeVildeo}}">
+                  <image data-likeStatus="{{item.likeVildeo}}" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" class="other" src="http://47.102.223.176/images/heart-red.png" bindtap="likeVideo"></image>
+                </block>
+                <image class="other" data-videoId="{{item.id}}" src="http://47.102.223.176/images/comments.png" bindtap="commentVideo"></image>
+                <button class="shareBtn" open-type="share">
+                  <image class="other" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" src="http://47.102.223.176/images/share.png" bindtap="shareVideo"></image>
+                </button>
+                <image class="other" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" data-videopath="{{videoUrl}}{{item.videoPath}}" src="http://47.102.223.176/images/info-circle-fill.png" bindtap="searchVideoInfo"></image>
+              </view>
             </view>
-            <!-- <view style="margin-top:-{{screenHeight*58/100}}px">
-                <image class="search" src="http://47.102.223.176:8080/images/search.png" bindtap="search"></image>
+          </view>
+          <!-- <view style="margin-top:-{{screenHeight*58/100}}px">
+                <image class="search" src="http://47.102.223.176/images/search.png" bindtap="search"></image>
                 <view class="videoDesc">{{item.videoDesc}}</view>
             </view> -->
         </view>
-    </block>
-<!--------------------------------------------------------------------------------------------------------------------------->
-    <block wx:if="{{item.check}}">
-        <video id="index"
-            src="{{serverUrl}}{{item.videoPath}}"
-            style="width:{{screenWidth}}px;height:{{screenHeight}}px;"
-            controls="{{false}}" 
-            autoplay="true" 
-            loop="true" 
-            direction="0"
-            bindtap="videoController"
-            >
-            <cover-image class="search" src="http://47.102.223.176:8080/images/search.png" bindtap="search"></cover-image>
-            <cover-view class="videoDesc">{{item.videoDesc}}</cover-view>
-            <cover-view class="desc2" style="margin-top: {{screenHeight/2}}rpx;">
-                <cover-view class="faceName">
-                    <cover-image data-videoCreatorId="{{item.userId}}" class="myface" src="{{serverUrl}}{{item.faceImage}}" bindtap="intoUserInfo"></cover-image>
-                    <cover-image wx:if="{{!item.likeUser}}" data-videoCreatorId="{{item.userId}}" data-videoId="{{item.id}}" class="addBtn" src="http://47.102.223.176:8080/images/add.png" bindtap="likeUser"></cover-image>
-                    <block wx:if="{{!item.likeVildeo}}">
-                        <cover-image data-likeStatus="{{item.likeVildeo}}" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" 
-                            class="other" src="http://47.102.223.176:8080/images/heart.png" bindtap="likeVideo"></cover-image>
-                    </block>
-                    <block wx:if="{{item.likeVildeo}}">
-                        <cover-image data-likeStatus="{{item.likeVildeo}}" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" 
-                            class="other" src="http://47.102.223.176:8080/images/heart-red.png" bindtap="likeVideo"></cover-image>
-                    </block>
-                    
-                    <cover-image class="other" data-videoId="{{item.id}}" src="http://47.102.223.176:8080/images/comments.png" bindtap="commentVideo"></cover-image>
-                    <button class="shareBtn" open-type="share"><cover-image class="other" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" src="http://47.102.223.176:8080/images/share.png" bindtap="shareVideo"></cover-image></button>
-                    <cover-image class="other" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" data-videopath="{{serverUrl}}{{item.videoPath}}" src="http://47.102.223.176:8080/images/info-circle-fill.png" bindtap="searchVideoInfo"></cover-image>
-                </cover-view>
+      </block>
+      <!--------------------------------------------------------------------------------------------------------------------------->
+      <block wx:if="{{item.check}}">
+        <video id="index" src="{{videoUrl}}{{item.videoPath}}" style="width:{{screenWidth}}px;height:{{screenHeight}}px;" controls="{{false}}" autoplay="true" loop="true" direction="0" bindtap="videoController">
+          <cover-image class="search" src="http://47.102.223.176/images/search.png" bindtap="search"></cover-image>
+          <cover-view class="videoDesc">{{item.videoDesc}}</cover-view>
+          <cover-view class="desc2" style="margin-top: {{screenHeight/2}}rpx;">
+            <cover-view class="faceName">
+              <cover-image data-videoCreatorId="{{item.userId}}" class="myface" src="{{videoUrl}}{{item.faceImage}}" bindtap="intoUserInfo"></cover-image>
+              <cover-image wx:if="{{!item.likeUser}}" data-videoCreatorId="{{item.userId}}" data-videoId="{{item.id}}" class="addBtn" src="http://47.102.223.176/images/add.png" bindtap="likeUser"></cover-image>
+              <block wx:if="{{!item.likeVildeo}}">
+                <cover-image data-likeStatus="{{item.likeVildeo}}" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" class="other" src="http://47.102.223.176/images/heart.png" bindtap="likeVideo"></cover-image>
+              </block>
+              <block wx:if="{{item.likeVildeo}}">
+                <cover-image data-likeStatus="{{item.likeVildeo}}" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" class="other" src="http://47.102.223.176/images/heart-red.png" bindtap="likeVideo"></cover-image>
+              </block>
+
+              <cover-image class="other" data-videoId="{{item.id}}" src="http://47.102.223.176/images/comments.png" bindtap="commentVideo"></cover-image>
+              <button class="shareBtn" open-type="share">
+                <cover-image class="other" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" src="http://47.102.223.176/images/share.png" bindtap="shareVideo"></cover-image>
+              </button>
+              <cover-image class="other" data-videoId="{{item.id}}" data-videoCreatorId="{{item.userId}}" data-videopath="{{videoUrl}}{{item.videoPath}}" src="http://47.102.223.176/images/info-circle-fill.png" bindtap="searchVideoInfo"></cover-image>
             </cover-view>
+          </cover-view>
         </video>
-    </block>
+      </block>
     </swiper-item>
-</block>
+  </block>
 </swiper>
-  
+
 
 
 <!-- 模板按钮 -->
 <view class="container" style="background-color: rgba(0, 0, 0, 0);position:fixed; bottom:0px; width: 100%;height: 120rpx;">
-    <!-- 设置模板名称 -->
-    <!-- 将数据通过data赋值传入 -->
-    <!-- 前面三个冒号代表这是一个对象需展开 -->
-    <template is="mytemp" data="{{...userInfo}}" />
+  <!-- 设置模板名称 -->
+  <!-- 将数据通过data赋值传入 -->
+  <!-- 前面三个冒号代表这是一个对象需展开 -->
+  <template is="mytemp" data="{{...userInfo}}" />
 </view>
