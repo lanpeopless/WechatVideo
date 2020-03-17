@@ -1,5 +1,5 @@
 page {
-    background-color: whitesmoke;
+    background-color: #1e0a18;
 }
 
 .login-img {
@@ -8,7 +8,8 @@ page {
 
 /*表单内容*/
 .inputView {
-    background-color: white;
+    background-color: #1e0a18;
+    color: whitesmoke;
     line-height: 45px;
 }
 
@@ -61,7 +62,7 @@ page {
   width: 200rpx;
   height: 120rpx;
   margin-top: 20rpx;
-  background-color: white;
+  background-color: #1e0a18;
   color: #999999;
   border-radius: 0rpx;
   display: flex;

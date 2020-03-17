@@ -1,5 +1,8 @@
 // 1 导入js文件
 var WxSearch = require('../wxSearchView/wxSearchView.js');
+const http = require('../../config/httpRequest.js');
+const utils = require('../../utils/utils.js');
+
 //获取应用实例
 const app = getApp()
 Page({
@@ -16,23 +19,21 @@ Page({
   getHotWords:function(){
     var serverUrl = app.serverUrl;
     const that = this;
-    wx.request({
-      url: serverUrl + '/video/selectHotWords',
-      method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success: function(res){
+    http.requestUrl({
+      url: app.requestInfo.video.selectHotWords.url,
+      method: app.requestInfo.video.selectHotWords.method
+    }).then(res => {
         // success
-        var hotWordsList = res.data.data;
-          WxSearch.init(
-            that,  // 本页面一个引用
-            hotWordsList, // 热点搜索词推荐，[]表示不使用
-            hotWordsList,// 搜索匹配，[]表示不使用
-            that.mySearchFunction, // 提供一个搜索回调函数
-            that.myGobackFunction //提供一个返回回调函数
-          );
-      }
+        if (res.code == 'ok') {
+          var hotWordsList = res.data;
+            WxSearch.init(
+              that,  // 本页面一个引用
+              hotWordsList, // 热点搜索词推荐，[]表示不使用
+              hotWordsList,// 搜索匹配，[]表示不使用
+              that.mySearchFunction, // 提供一个搜索回调函数
+              that.myGobackFunction //提供一个返回回调函数
+            );
+        }
     })
   },
 

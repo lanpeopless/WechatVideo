@@ -163,7 +163,6 @@ public class UserServiceImpl implements UserService {
     public void reportUser(UserReport userReport) {
         userReport.setId(sid.nextShort());
         userReport.setCreateTime(new Date());
-
         userReportMapper.insert(userReport);
     }
 

@@ -161,7 +161,7 @@ button::after {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content:space-around;
-    background: #36bbb5;
+    background: none;
 }
 .btn{
   width: 200rpx;

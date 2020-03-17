@@ -1,4 +1,5 @@
-
+const http = require('../../config/httpRequest.js');
+const utils = require('../../utils/utils.js');
 
 const app = getApp()
 
@@ -33,6 +34,8 @@ Page({
     screenWidth: 350,
     screenHeight: 350,
     pixelRatio:1,
+    videoUrl: '',
+    searchValue: ''
   },
   onLoad: function (params) {
     var screenWidth = wx.getSystemInfoSync().windowWidth;
@@ -41,12 +44,13 @@ Page({
     this.setData({
       screenWidth: screenWidth,
       screenHeight: screenHeight,
-      pixelRatio:pixelRatio
+      pixelRatio:pixelRatio,
+      videoList: []
     });
     var userInfo = app.userInfo;
     var videoCreatorId = params.videoCreatorId;
     if (videoCreatorId == undefined ) {
-      this.getUserInfo();
+      this.getUserInfo(userInfo.id);
       this.setData({
         currentUserId:app.userInfo.id
       })
@@ -55,12 +59,12 @@ Page({
         creatorId:videoCreatorId,
         currentUserId:videoCreatorId
       })
-      this.getCreatorInfo();
+      this.getUserInfo(videoCreatorId);
       if (userInfo != null) {
         this.getUserLikeStatus();
       }
     }
-    this.doSelectWork();
+    this.tabChange();
   },
   showVideo:function(params){
     var arrindex = params.currentTarget.dataset.arrindex;
@@ -126,199 +130,101 @@ Page({
   },
   logout: function (params){
     var user = app.getGlobalUserInfo();
-    
-    // 向后台发起请求，请求登录
-        var serverUrl = app.serverUrl;
-        wx.showLoading({
-          title: '请等待',
-        });
-        wx.request({
-          url: serverUrl + '/logout',
-          method: "POST",
-          data: {
-            userId: user.id
-          },
-          header: {
-            'content-type': 'application/json' // 默认值
-          },
-          success(res) {
-            
-            if (res.data.status == 200) {
-              wx.hideLoading();
-              app.userInfo = null;
-              wx.removeStorageSync('userInfo');
-              wx.showToast({
-                title: '注销成功',
-                icon: 'success',
-                mask: true,
-                duration: 2000
-              }),
-                setTimeout(function () {
-                  wx.redirectTo({
-                    url: '/pages/userLogin/userLogin',
-                  })
-                }, 1000)
-
-            } else {
-              wx.hideLoading();
-              wx.showToast({
-                title: '注销失败,' + res.data.msg,
-                icon: 'none',
-                mask: true,
-                duration: 2000
-              })
-            }
-          }
-        })
-  },
-  getUserInfo: function (params){
-    console.log(params);
-    var that = this;
-    var user = app.getGlobalUserInfo();
-    app.userInfo = user;
-    
-    // 向后台发起请求，请求登录
-    var serverUrl = app.serverUrl;
-    wx.showLoading({
-      title: '数据加载中',
-    });
-    wx.request({
-      url: serverUrl + '/user/queryUserInfoById',
-      method: "POST",
-      data: {
+    http.requestUrl({
+      url: app.requestInfo.user.logout.url,
+      method: app.requestInfo.user.logout.method,
+      params: {
         id: user.id
       },
-      header: {
-        'content-type': 'application/json', // 默认值
-        // 将用户的id和token放到header中用于安全认证
-        'userId': user.id,
-        'userToken': user.userToken
-      },
-      success(res) {
-        if (res.data.status == 200) {
-          wx.hideLoading();
-          var userInfo = res.data.data;
-          var token = userInfo.userToken;
-          app.userInfo = userInfo;
-          app.userInfo.userToken = token;
-          wx.showToast({
-            title: '查询成功',
-            icon: 'success',
-            mask: true,
-            duration: 2000
-          })
-          var faceUrl;
-          if (userInfo.faceImage==null){
-            faceUrl = 'http://47.102.223.176/images/noneface.png';
-          }else{
-            faceUrl = serverUrl + userInfo.faceImage;
-          }
-          that.setData({
-            faceUrl: faceUrl,
-            fansCounts: userInfo.fansCounts,
-            followCounts: userInfo.followCounts,
-            receiveLikeCounts: userInfo.receiveLikeCounts,
-            nickname: userInfo.nickname,
-            isMine:true
-          })
-        } else if(res.data.status == 502){
-          wx.showToast({
-              title: res.data.msg ,
-              icon: 'none',
-              duration: 2000
-          });
-          app.userInfo = null;
-          wx.removeStorageSync('userInfo');
+    }).then(res => {
+       if (res.code == 'ok') {
+        wx.hideLoading();
+        app.userInfo = null;
+        wx.removeStorageSync('userInfo');
+        wx.showToast({
+          title: '注销成功',
+          icon: 'success',
+          mask: true,
+          duration: 2000
+        }),
           setTimeout(function () {
-              wx.redirectTo({
-                url: '/pages/userLogin/userLogin',
-              })
+            wx.redirectTo({
+              url: '/pages/userLogin/userLogin',
+            })
           }, 1000)
-        } else {
-          wx.hideLoading();
-          wx.showToast({
-            title: '查询失败,' + res.data.msg,
-            icon: 'none',
-            mask: true,
-            duration: 2000
-          })
-        }
+
+      } else {
+        wx.hideLoading();
+        wx.showToast({
+          title: '注销失败,' + res.data.msg,
+          icon: 'none',
+          mask: true,
+          duration: 2000
+        })
       }
-    })
-    
-  },
-  /**
-   * 获取视频创作者的信息
-   * @param {*} params 
-   */
-  getCreatorInfo: function (params){
-    var that = this;
-    var creatorId = this.data.creatorId;
-    // 向后台发起请求，请求登录
-    var serverUrl = app.serverUrl;
-    wx.showLoading({
-      title: '数据加载中',
     });
-    wx.request({
-      url: serverUrl + '/user/queryUserInfoById',
-      method: "POST",
-      data: {
-        id: creatorId
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
-        // 将用户的id和token放到header中用于安全认证
-      },
-      success(res) {
-        if (res.data.status == 200) {
-          wx.hideLoading();
-          var creatorInfo = res.data.data;
-          var token = creatorInfo.userToken;
-          wx.showToast({
-            title: '查询成功',
-            icon: 'success',
-            mask: true,
-            duration: 2000
-          })
-          var faceUrl;
-          if (creatorInfo.faceImage==null){
-            faceUrl = 'http://47.102.223.176/images/noneface.png';
-          }else{
-            faceUrl = serverUrl + creatorInfo.faceImage;
-          }
-          that.setData({
-            faceUrl: faceUrl,
-            creatorId: creatorInfo.id,
-            fansCounts: creatorInfo.fansCounts,
-            followCounts: creatorInfo.followCounts,
-            receiveLikeCounts: creatorInfo.receiveLikeCounts,
-            nickname: creatorInfo.nickname,
-            isMine:false
-          })
-        } else if(res.data.status == 502){
-          wx.showToast({
-              title: res.data.msg ,
-              icon: 'none',
-              duration: 2000
-          });
-          app.userInfo = null;
-          wx.removeStorageSync('userInfo');
-          setTimeout(function () {
-              wx.redirectTo({
-                url: '/pages/userLogin/userLogin',
-              })
-          }, 1000)
-        } else {
-          wx.hideLoading();
-          wx.showToast({
-            title: '查询失败,' + res.data.msg,
-            icon: 'none',
-            mask: true,
-            duration: 2000
-          })
+  },
+  getUserInfo: function (id){
+    var that = this;
+    var user = app.getGlobalUserInfo();
+    var serverUrl = app.serverUrl;
+    var videoUrl = app.videoUrl;
+    app.userInfo = user;
+    http.requestUrl({
+        url: app.requestInfo.user.queryUserInfoById.url,
+        method: app.requestInfo.user.queryUserInfoById.method,
+        params: {
+          id: id
+        },
+    }).then(res => {
+      if (res.code == 'ok') {
+        wx.hideLoading();
+        var userInfo = res.data;
+        var token = app.userToken;
+        app.userInfo = userInfo;
+        wx.showToast({
+          title: '查询成功',
+          icon: 'success',
+          mask: true,
+          duration: 2000
+        })
+        var faceUrl;
+        if (userInfo.faceImage==null){
+          faceUrl = 'http://47.102.223.176/images/noneface.png';
+        }else{
+          faceUrl = videoUrl + userInfo.faceImage;
         }
+        that.setData({
+          faceUrl: faceUrl,
+          fansCounts: userInfo.fansCounts,
+          followCounts: userInfo.followCounts,
+          receiveLikeCounts: userInfo.receiveLikeCounts,
+          nickname: userInfo.nickname,
+          isMine:true
+        })
+      } else if(res.code == 502){
+        wx.showToast({
+            title: res.data.msg ,
+            icon: 'none',
+            duration: 2000
+        });
+        app.userInfo = null;
+        wx.removeStorageSync('userInfo');
+        setTimeout(function () {
+            wx.redirectTo({
+              url: '/pages/userLogin/userLogin',
+            })
+        }, 1000)
+      } else {
+        wx.hideLoading();
+        wx.showToast({
+          title: '查询失败,' + res.data.msg,
+          icon: 'none',
+          mask: true,
+          duration: 2000
+        })
       }
-    })
+    });
     
   },
   getUserLikeStatus: function(){
@@ -327,32 +233,19 @@ Page({
     var creatorId = this.data.creatorId;
     var serverUrl = app.serverUrl;
     var userInfo = app.userInfo;
-    console.log(userInfo);
-    
-    wx.request({
-      url: serverUrl + '/user/getUserLikeStatus',
-      data: {
-        userId:creatorId,
-        fanId:userInfo.id
-      },
-      method: 'POST',
-      header: {
-        'content-type': 'application/json' // 默认值
-      }, // 设置请求的 header
-      success: function(res){
+    http.requestUrl({
+        url: app.requestInfo.video.getUserLikeStatus.url,
+        method: app.requestInfo.video.getUserLikeStatus.method,
+        params: {
+          userId:creatorId,
+          fanId:userInfo.id
+        },
+    }).then(res => {
         // success
-        var likeUserStatus = res.data.data.likeUserStatus;
+        var likeUserStatus = res.data.likeUserStatus;
         that.setData({
           likeUserStatus:likeUserStatus
         });
-        
-      },
-      fail: function() {
-        // fail
-      },
-      complete: function() {
-        // complete
-      }
     })
   },
   changeFace: function (params){
@@ -390,7 +283,7 @@ Page({
                 mask: true,
                 duration: 2000
               });
-              that.getUserInfo();
+              that.getUserInfo(userInfo.id);
             } else if (res.data.status == 502) {
                 wx.showToast({
                     title: res.data.msg ,
@@ -449,16 +342,19 @@ Page({
       }
     })
   },
-  /**
-   * tab页切换--我的作品
-   */
-  doSelectWork: function () {
+  tabChange: function (params) {
+    let tab = '';
+    if (utils.isEmpty(params)) {
+      tab = 'work';
+    } else {
+      tab = params.currentTarget.dataset.tab;
+    }
     this.setData({
-      isSelectedWork: "video-info-selected",
+      isSelectedWork: "video-info-unselected",
       isSelectedLike: "video-info-unselected",
       isSelectedFollow: "video-info-unselected",
 
-      myWorkFalg: true,
+      myWorkFalg: false,
       myLikesFalg: false,
       myFollowFalg: false,
 
@@ -473,65 +369,29 @@ Page({
       followVideoList: [],
       followVideoPage: 1,
       followVideoTotal: 1
-    });
-
-    this.getVideoList('work');
-  },
-  /**
-   * tab页切换--我的喜欢
-   */
-  doSelectLike: function () {
-    this.setData({
-      isSelectedWork: "video-info-unselected",
-      isSelectedLike: "video-info-selected",
-      isSelectedFollow: "video-info-unselected",
-
-      myWorkFalg: false,
-      myLikesFalg: true,
-      myFollowFalg: false,
-
-      myVideoList: [],
-      myVideoPage: 1,
-      myVideoTotal: 1,
-
-      likeVideoList: [],
-      likeVideoPage: 1,
-      likeVideoTotal: 1,
-
-      followVideoList: [],
-      followVideoPage: 1,
-      followVideoTotal: 1
-    });
-
-    this.getVideoList('like');
-  },
-  /**
-   * tab页切换--我的关注
-   */
-  doSelectFollow: function () {
-    this.setData({
-      isSelectedWork: "video-info-unselected",
-      isSelectedLike: "video-info-unselected",
-      isSelectedFollow: "video-info-selected",
-
-      myWorkFalg: false,
-      myLikesFalg: false,
-      myFollowFalg: true,
-
-      myVideoList: [],
-      myVideoPage: 1,
-      myVideoTotal: 1,
-
-      likeVideoList: [],
-      likeVideoPage: 1,
-      likeVideoTotal: 1,
-
-      followVideoList: [],
-      followVideoPage: 1,
-      followVideoTotal: 1
-    });
-
-    this.getVideoList('follow');
+    })
+    if (tab == 'work') {
+      // tab页切换--我的作品
+      this.setData({
+        isSelectedWork: "video-info-selected",
+        myWorkFalg: true,
+      });
+      this.getVideoList('work');
+    } else if (tab == 'like') {
+      // tab页切换--我的喜欢
+      this.setData({
+        isSelectedLike: "video-info-selected",
+        myLikesFalg: true,
+      });
+      this.getVideoList('like');
+    } else if (tab == 'follow') {
+      // tab页切换--我的关注
+      this.setData({
+        isSelectedFollow: "video-info-selected",
+        myFollowFalg: true,
+      });
+      this.getVideoList('follow');
+    }
   },
   /**
    * 获取个人信息展示页面的视频列表
@@ -541,43 +401,56 @@ Page({
     var that = this;
     var currentUserId = this.data.currentUserId;
     var serverUrl = app.serverUrl;
+    var videoUrl = app.videoUrl;
     this.data
     if (param != undefined){
-      wx.request({
-        url: serverUrl + '/video/getPersonalVideo',
-        method: "POST",
-        data: {
-          page: that.data.page,
-          pageSize: that.data.pageSize,
-          currentUserId: currentUserId,
-          status: param
-        },
-        header: {
-          'content-type': 'application/json' // 默认值
-        },
-        success: function(res){
-          var videoList = res.data.data.rows;
-          var videoListOld = that.data.videoList;
-          var videoListNew = videoListOld.concat(videoList);
-          var videoListCount = videoListNew.length;
-          var page = res.data.data.page;
-          var records = res.data.data.records;
-          var total = res.data.data.total;
-          that.setData({
-            videoList:videoList,
-            serverUrl:serverUrl,
-            page:page,
-            records:records,
-            totalPage:total,
-            videoListCount,videoListCount
-          })
-          console.log(that.data.videoList);
-          
-        }
-      })
+      http.requestUrl({
+          url: app.requestInfo.video.getPersonalVideo.url,
+          method: app.requestInfo.video.getPersonalVideo.method,
+          params: {
+            pageNum : that.data.page,
+            pageSize : that.data.pageSize,
+            filterCauses : [
+              {
+                attributeName: 'status',
+                attributeType: 'eq',
+                attributeValue: param
+              }
+            ],
+            sortCauses: [
+            ]
+          },
+      }).then(res => {
+        console.log(res);
+        
+        var videoList = utils.isNotEmpty(res.data.table) ? res.data.table : [];
+        var videoListOld = that.data.videoList;
+        var videoListNew = videoListOld.concat(videoList);
+        var videoListCount = videoListNew.length;
+        var page = res.data.pageNum;
+        var records = res.data.totalCount; // 总记录数
+        var total = records / that.data.pageSize; // 总页数
+        that.setData({
+          videoList: videoList,
+          serverUrl: serverUrl,
+          videoUrl: videoUrl,
+          page: page,
+          records: records,
+          totalPage: total,
+          videoListCount: videoListCount
+        })
+        console.log(that.data.videoList);
+        console.log(that.data.videoUrl);
+        console.log(that.data.videoList);
+        
+      });
     }
     
   },
+  /**
+   * 触底事件
+   * @param {*} param 
+   */
   onReachBottom: function(param){
     // 触底向后加载几个视频
     var that = this;

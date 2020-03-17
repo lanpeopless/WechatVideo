@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e53b1f7-0b13-4328-a607-60dd99a512a8" name="Default Changelist" comment="" />
+    <list default="true" id="1e53b1f7-0b13-4328-a607-60dd99a512a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/pages/chooseBgm/chooseBgm.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/pages/chooseBgm/chooseBgm.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/pages/comment/comment.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/pages/comment/comment.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/pages/mine/mine.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/pages/mine/mine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/pages/template/template.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/pages/template/template.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/pages/userLogin/userLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/pages/userLogin/userLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/pages/userLogin/userLogin.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/pages/userLogin/userLogin.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/pages/userLogin/userLogin.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/pages/userLogin/userLogin.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/pages/userRegist/regist.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/pages/userRegist/regist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/pages/userRegist/regist.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/pages/userRegist/regist.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/pages/userRegist/regist.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/pages/userRegist/regist.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../video/sitemap.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../video/sitemap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/MergeVideoMp3.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/MergeVideoMp3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/Sid.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/Sid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/utils/IPv4Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/utils/IPv4Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/utils/Ip.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/utils/Ip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/utils/Props.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/utils/Props.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/BgmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/BgmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/VideoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/VideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/VideoServiceImpl.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/videos-common/target/" />
@@ -30,12 +61,40 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="video_wx@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="video_wx@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="video_wx@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="video_wx: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="云服务器MariaDB" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="云服务器MariaDB" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="云服务器MariaDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="video_wx: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="云服务器MariaDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="video_wx: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="user_info: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -48,11 +107,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/application.properties">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/VideoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="33" column="59" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="59" />
+            <state relative-caret-position="224">
+              <caret line="263" column="58" lean-forward="true" selection-start-line="263" selection-start-column="58" selection-end-line="263" selection-end-column="58" />
+              <folding>
+                <element signature="method#uploadVideo#0;class#VideoController#0" />
+                <element signature="method#selectAllVideo#0;class#VideoController#0" />
+                <element signature="method#selectVideoByCondition#0;class#VideoController#0" />
+                <element signature="e#9744#10283#1" />
+                <element signature="method#changeVideoLikeStatus#0;class#VideoController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/VideoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/VideoServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="181" column="40" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
+              <folding>
+                <element signature="docComment;class#VideoServiceImpl#0" />
+                <element signature="e#1271#1321#0" />
+                <element signature="method#saveVideo#0;class#VideoServiceImpl#0" />
+                <element signature="method#queryVideoById#0;class#VideoServiceImpl#0" />
+                <element signature="e#1729#1801#1" />
+                <element signature="e#1835#1885#0" />
+                <element signature="method#updateVideo#0;class#VideoServiceImpl#0" />
+                <element signature="e#1993#2055#1" />
+                <element signature="method#getAllVideos#0;class#VideoServiceImpl#0" />
+                <element signature="method#getAllVideosByContidition#0;class#VideoServiceImpl#0" />
+                <element signature="e#3773#3787#0" />
+                <element signature="method#userLikeVideo#0;class#VideoServiceImpl#0" />
+                <element signature="e#4093#4564#1" />
+                <element signature="e#4576#4590#0" />
+                <element signature="method#userUnLikeVideo#0;class#VideoServiceImpl#0" />
+                <element signature="e#4898#5341#1" />
+                <element signature="method#getUserLikeVideo#0;class#VideoServiceImpl#0" />
+                <element signature="method#commentVideo#0;class#VideoServiceImpl#0" />
+                <element signature="e#8012#8013#0" expanded="true" />
+                <element signature="e#8086#8087#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/VideoMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/VideoMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="122" column="29" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -81,6 +205,10 @@
       <find>BaseResultMap</find>
       <find>table</find>
       <find>开发文件夹</find>
+      <find>add</find>
+      <find>del</find>
+      <find>addVideoLikeCount</find>
+      <find>getCommentByVideoId</find>
     </findStrings>
     <replaceStrings>
       <replace>JSONResult</replace>
@@ -92,17 +220,12 @@
       <dir>$PROJECT_DIR$/videos-common</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/mapper/VideoMapper.java" />
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/service/VideoService.java" />
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/service/impl/VideoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/videos-common/src/main/java/com/Jonas/utils/PagedResult.java" />
-        <option value="$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/PagedResult.java" />
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/SearchRecordsMapper.java" />
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/SearchRecordsMapper.xml" />
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/interceptor/MiniInterceptor.java" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/UserLikeVideo.java" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/UserLikeVideoMapper.java" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/dto/likeVideoDTO.java" />
@@ -114,16 +237,11 @@
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/UsersFansMapper.xml" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/vo/VideoVO.java" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/VideoMapper.java" />
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/VideoMapper.xml" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/UserService.java" />
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/vo/UserInfoVO.java" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/CommentsMapper.java" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/dto/VideoDTO.java" />
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/VideoServiceImpl.java" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/VideoService.java" />
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/VideoController.java" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/Comments.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3f840fd6-d558-4e67-a65e-86e03ee0970f/console.sql" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/CommentsMapper.xml" />
@@ -139,13 +257,26 @@
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/application-prod.properties" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WarStartApplication.java" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/BasicController.java" />
-        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/test.yml" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/videos-common/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/BgmServiceImpl.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4e6e4e67-bbf1-4755-927d-84678c54b5de/console.sql" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/BgmController.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/utils/Ip.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/utils/IPv4Utils.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/utils/Props.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/Test.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/Sid.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/MergeVideoMp3.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/VideoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/VideoController.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/VideoMapper.xml" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/RegisterController.java" />
+        <option value="$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WebMvcConfig.java" />
       </list>
     </option>
   </component>
@@ -183,12 +314,12 @@
     <option name="width" value="1366" />
     <option name="height" value="732" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,12 +351,59 @@
               <item name="videos-mini-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="videos-mini-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jonas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="videos-mini-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jonas" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="videos-mini-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jonas" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="videos-mini-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="videos-mini-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -238,12 +416,13 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554574380385" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/videos-mini-api/src/main/resources" />
+    <property name="last_opened_file_path" value="$APPLICATION_CONFIG_DIR$/consoles" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -253,12 +432,12 @@
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/videos-mini-api/src/main/resources" />
-      <recent name="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/common/utils" />
-      <recent name="$PROJECT_DIR$/mybatis-generatorConfig/src/main/java/com/imooc/com" />
-      <recent name="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/common" />
-      <recent name="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/videos-pojo/src/main/jjj" />
+      <recent name="$PROJECT_DIR$/videos-pojo/src/main" />
+      <recent name="$PROJECT_DIR$/mybatis-generatorConfig/target/classes/com" />
+      <recent name="$PROJECT_DIR$/mybatis-generatorConfig/src/main/resources" />
+      <recent name="$PROJECT_DIR$/mybatis-generatorConfig" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.imooc.vo" />
@@ -266,12 +445,12 @@
       <recent name="com.imooc.pojo" />
       <recent name="com.imooc.mapper" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/videos-pojo/src/main/jjj" />
-      <recent name="$PROJECT_DIR$/videos-pojo/src/main" />
-      <recent name="$PROJECT_DIR$/mybatis-generatorConfig/target/classes/com" />
-      <recent name="$PROJECT_DIR$/mybatis-generatorConfig/src/main/resources" />
-      <recent name="$PROJECT_DIR$/mybatis-generatorConfig" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$APPLICATION_CONFIG_DIR$/consoles" />
+      <recent name="$PROJECT_DIR$/videos-mini-api/src/main/resources" />
+      <recent name="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/common/utils" />
+      <recent name="$PROJECT_DIR$/mybatis-generatorConfig/src/main/java/com/imooc/com" />
+      <recent name="$PROJECT_DIR$/videos-mini-api/src/main/java/com/imooc/common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -300,6 +479,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IPv4Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jonas.common.idworker.utils.IPv4Utils" />
+      <module name="videos-mini-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jonas.common.idworker.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ip" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jonas.common.idworker.utils.Ip" />
+      <module name="videos-mini-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jonas.common.idworker.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jonas.common.idworker.Test" />
+      <module name="videos-mini-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jonas.common.idworker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="video" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="videos-mini-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jonas.Application" />
@@ -313,10 +531,16 @@
     </configuration>
     <list>
       <item itemvalue="Application.GeneratorDisplay" />
+      <item itemvalue="Application.IPv4Utils" />
+      <item itemvalue="Application.Ip" />
+      <item itemvalue="Application.Test" />
       <item itemvalue="Spring Boot.video" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Ip" />
+        <item itemvalue="Application.IPv4Utils" />
         <item itemvalue="Application.GeneratorDisplay" />
       </list>
     </recent_temporary>
@@ -395,17 +619,27 @@
       <workItem from="1569391954431" duration="1175000" />
       <workItem from="1569856373508" duration="1207000" />
       <workItem from="1573562317823" duration="1598000" />
+      <workItem from="1579405853199" duration="767000" />
+      <workItem from="1580138904049" duration="2245000" />
+      <workItem from="1580191699322" duration="38977000" />
+      <workItem from="1580990279616" duration="1856000" />
+      <workItem from="1581136729381" duration="8330000" />
+      <workItem from="1581311372305" duration="5929000" />
+      <workItem from="1581440355409" duration="598000" />
+      <workItem from="1581581146050" duration="21089000" />
+      <workItem from="1583931277597" duration="612000" />
+      <workItem from="1584429903994" duration="2615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265516000" />
+    <option name="totallyTimeSpent" value="348534000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3090129" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28612304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -417,8 +651,8 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Dependency Viewer" order="2" weight="0.32961586" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32866243" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.545108" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.38289964" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.4053367" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.38246506" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -430,8 +664,8 @@
       <window_info anchor="bottom" id="Messages" order="14" weight="0.3278272" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
       <window_info anchor="bottom" id="Database Changes" order="16" />
-      <window_info anchor="bottom" id="Version Control" order="17" />
-      <window_info anchor="bottom" id="Database Console" order="18" visible="true" weight="0.49047014" />
+      <window_info anchor="bottom" id="Version Control" order="17" weight="0.32909784" />
+      <window_info anchor="bottom" id="Database Console" order="18" weight="0.49047014" />
       <window_info anchor="bottom" id="Duplicate detector" order="19" weight="0.32961586" />
       <window_info anchor="bottom" id="SQL Generator" order="20" weight="0.5349428" />
       <window_info anchor="right" id="Module Dependencies" order="0" visible="true" weight="0.22961374" />
@@ -441,7 +675,7 @@
       <window_info anchor="right" id="Maven" order="4" weight="0.33333334" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.16452074" />
+      <window_info anchor="right" id="Database" order="7" weight="0.16452074" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
@@ -497,359 +731,419 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/UserLikeVideoMapper.java">
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="108">
+          <caret line="5" selection-start-line="5" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/Comments.java">
+    <entry file="file://$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/JSONResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/utils/RedisOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generatorConfig/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+        <state relative-caret-position="595">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding>
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#7;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.12.RELEASE/spring-boot-autoconfigure-1.5.12.RELEASE.jar!/org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar!/org/apache/commons/codec/binary/Base64.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="239" column="24" selection-start-line="239" selection-start-column="24" selection-end-line="239" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e6e4e67-bbf1-4755-927d-84678c54b5de/schema/information_schema/view/VIEWS" />
-    <entry file="das://4e6e4e67-bbf1-4755-927d-84678c54b5de/schema/information_schema/view/CHARACTER_SETS" />
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WarStartApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generatorConfig/src/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="31" column="106" selection-start-line="31" selection-start-column="106" selection-end-line="31" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/VideoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="69" column="45" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#selectAllVideo#0;class#VideoController#0" />
-            <element signature="method#selectVideoByCondition#0;class#VideoController#0" />
-            <element signature="method#changeVideoLikeStatus#0;class#VideoController#0" />
-            <element signature="method#getPersonalVideo#0;class#VideoController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/test.yml" />
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/BgmController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3f840fd6-d558-4e67-a65e-86e03ee0970f/schema/mysql/table/user" />
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/testController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/Swagger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        <state relative-caret-position="249">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/utils/MD5Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="189">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/UserInfo.java">
+    <entry file="file://$PROJECT_DIR$/videos-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="175">
+          <caret line="135" column="8" selection-start-line="135" selection-start-column="8" selection-end-line="149" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/UserInfoMapper.xml">
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/vo/UserInfoVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="6" column="67" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="67" />
-          <folding>
-            <element signature="n#insert#0;n#mapper#0;n#!!top" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
-            <element signature="n#select#0;n#mapper#0;n#!!top" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" />
-            <element signature="n#select#2;n#mapper#0;n#!!top" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" />
-            <element signature="n#update#2;n#mapper#0;n#!!top" />
-            <element signature="n#update#3;n#mapper#0;n#!!top" />
-            <element signature="n#update#4;n#mapper#0;n#!!top" />
-            <element signature="n#update#5;n#mapper#0;n#!!top" />
-            <element signature="n#update#6;n#mapper#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/UserInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/BgmMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="56" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="56" />
-          <folding>
-            <element signature="n#delete#0;n#mapper#0;n#!!top" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/BgmServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/BgmMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3f840fd6-d558-4e67-a65e-86e03ee0970f/schema/video_wx/table/user_info" />
-    <entry file="file://$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/FFMpegTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/FetchVideoCover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1097">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="251">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/Sid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e6e4e67-bbf1-4755-927d-84678c54b5de/schema/video_wx/table/user_info" />
-    <entry file="das://4e6e4e67-bbf1-4755-927d-84678c54b5de/schema/video_wx/table/bgm" />
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="40" column="44" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/idworker/Id.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/BasicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding>
-            <element signature="method#uploadFaceImage#0;class#UserController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4e6e4e67-bbf1-4755-927d-84678c54b5de/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/9952f84168357682f88202f6c86e4054/Message/MessageTemp/ab0accf0b9a460b2f94e0cf82ea20921/File/AuthenticationServiceImpl.java" />
-    <entry file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/9952f84168357682f88202f6c86e4054/Message/MessageTemp/ab0accf0b9a460b2f94e0cf82ea20921/File/AuthenticationService.java" />
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/utils/FetchVideoCover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="402">
+          <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/utils/MergeVideoMp3.java">
+    <entry file="das://4e6e4e67-bbf1-4755-927d-84678c54b5de/schema/video_wx/table/user_info" />
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/dto/UserDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="189">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/common/utils/FFMpegTest.java">
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/UsersFans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" selection-start-line="3" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/UsersFansMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/UserReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" selection-start-line="5" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="135" column="23" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="43" />
+          <folding>
+            <element signature="method#uploadFaceImage#0;class#UserController#0" />
+            <element signature="method#queryUserInfoById#0;class#UserController#0" />
+            <element signature="method#changeUserLikeStatus#0;class#UserController#0" />
+            <element signature="method#getUserLikeStatus#0;class#UserController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/Bgm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/BgmService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/BgmController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="161" selection-start-line="161" selection-end-line="166" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateUserInfo#0;class#UserServiceImpl#0" />
+            <element signature="method#searchUserInfoById#0;class#UserServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/FetchVideoCover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="72" column="26" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="26" />
+          <folding>
+            <element signature="e#1583#1584#0" expanded="true" />
+            <element signature="e#1616#1617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/BasicController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="673">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/Video.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" selection-start-line="5" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/MergeVideoMp3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="method#convertor#0;class#MergeVideoMp3#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-common/src/main/java/com/jonas/utils/PagedResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/UserLikeVideo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="3" selection-start-line="3" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="66" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/SearchRecordsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/SearchRecordsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/SearchRecords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/dto/LikeVideoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/application-dev.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
-          <caret line="1" column="71" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/application-prod.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-pojo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" selection-start-line="24" selection-end-line="169" />
-          <folding>
-            <element signature="n#dependencies#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mapper/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-mini-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="59" />
+        <state relative-caret-position="-1157">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/UserLikeVideoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/UserInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="56" selection-start-line="56" selection-end-line="58" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/UserInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/UserLikeVideoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+          <folding>
+            <element signature="method#register#0;class#RegisterController#0" />
+            <element signature="method#setUserSession#0;class#RegisterController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/vo/VideoVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/pojo/Comments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/vo/CommentVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/dto/VideoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/Swagger2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WarStartApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/CommentsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/CommentsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/interceptor/MiniInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/controller/VideoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="263" column="58" lean-forward="true" selection-start-line="263" selection-start-column="58" selection-end-line="263" selection-end-column="58" />
+          <folding>
+            <element signature="method#uploadVideo#0;class#VideoController#0" />
+            <element signature="method#selectAllVideo#0;class#VideoController#0" />
+            <element signature="method#selectVideoByCondition#0;class#VideoController#0" />
+            <element signature="e#9744#10283#1" />
+            <element signature="method#changeVideoLikeStatus#0;class#VideoController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/VideoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/service/impl/VideoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="181" column="40" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
+          <folding>
+            <element signature="docComment;class#VideoServiceImpl#0" />
+            <element signature="e#1271#1321#0" />
+            <element signature="method#saveVideo#0;class#VideoServiceImpl#0" />
+            <element signature="method#queryVideoById#0;class#VideoServiceImpl#0" />
+            <element signature="e#1729#1801#1" />
+            <element signature="e#1835#1885#0" />
+            <element signature="method#updateVideo#0;class#VideoServiceImpl#0" />
+            <element signature="e#1993#2055#1" />
+            <element signature="method#getAllVideos#0;class#VideoServiceImpl#0" />
+            <element signature="method#getAllVideosByContidition#0;class#VideoServiceImpl#0" />
+            <element signature="e#3773#3787#0" />
+            <element signature="method#userLikeVideo#0;class#VideoServiceImpl#0" />
+            <element signature="e#4093#4564#1" />
+            <element signature="e#4576#4590#0" />
+            <element signature="method#userUnLikeVideo#0;class#VideoServiceImpl#0" />
+            <element signature="e#4898#5341#1" />
+            <element signature="method#getUserLikeVideo#0;class#VideoServiceImpl#0" />
+            <element signature="method#commentVideo#0;class#VideoServiceImpl#0" />
+            <element signature="e#8012#8013#0" expanded="true" />
+            <element signature="e#8086#8087#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/java/com/jonas/mapper/VideoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-mini-api/src/main/resources/mapper/VideoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="122" column="29" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
         </state>
       </provider>
     </entry>

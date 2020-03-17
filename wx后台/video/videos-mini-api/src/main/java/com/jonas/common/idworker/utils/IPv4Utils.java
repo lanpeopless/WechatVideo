@@ -1,10 +1,7 @@
 package com.jonas.common.idworker.utils;
 
 /**
- * This utility provides methods to either convert an IPv4 address to its long format or a 32bit dotted format.
- *
- * @author Aion
- *         Created on 22/11/12
+ *  IPv4地址 整形<==>字符串
  */
 public class IPv4Utils {
 
@@ -55,6 +52,11 @@ public class IPv4Utils {
             }
         }
         return ipAddress.toString();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(IPv4Utils.toLong("192.168.0.100"));
+        System.out.println(IPv4Utils.toString(3232235620L));
     }
 
 }

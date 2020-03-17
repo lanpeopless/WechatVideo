@@ -12,6 +12,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
@@ -21,6 +22,7 @@ import java.util.UUID;
  * @date 2019-02-11 09:34
  */
 @RestController
+@RequestMapping("/video")
 @Api(value = "用户登录的接口",tags = {"注册和登录的controller"})
 public class RegisterController extends BasicController {
 
@@ -75,7 +77,7 @@ public class RegisterController extends BasicController {
 
     @ApiOperation(value = "用户登录的接口", notes = "用户登录的接口")
     @PostMapping(value = "/login",produces={"application/json;charset=UTF-8"})
-    JSONResult login(@RequestBody UserInfo userInfo){
+    JSONResult login(@RequestBody UserInfo userInfo) {
         UserInfo userInfoDB = userService.canLogin(userInfo);
         System.out.println(userInfoDB);
         if (userInfoDB!=null){

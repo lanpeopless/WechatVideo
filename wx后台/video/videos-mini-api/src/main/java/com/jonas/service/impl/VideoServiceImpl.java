@@ -51,7 +51,6 @@ public class VideoServiceImpl implements VideoService {
             video.setCreateTime(new Date());
             video.setLikeCunts((long)0);
             videoMapper.insert(video);
-
     }
 
     @Override

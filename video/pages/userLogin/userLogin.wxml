@@ -1,31 +1,30 @@
 <import src="/pages/template/template"></import>
 <view>
   <view class="login-icon">
-    <image class="login-img" src="http://47.102.223.176/images/dsp.jpg"></image>
+    <image class="login-img" src="http://47.102.223.176/images/vlog.jpeg"></image>
   </view>
   <view class="login-from">
     <form bindsubmit='doLogin'>
       <!--账号-->
       <view class="inputView">
-        <image class="nameImage" src="http://47.102.223.176/images/username.png"></image>
+        <image class="nameImage" src="http://47.102.223.176/images/user2.png"></image>
         <label class="loginLabel">账号</label>
         <input name="username" value='cmj' class="inputText" placeholder="请输入账号" />
         <!-- <input name="username" class="inputText" placeholder="请输入账号" /> -->
       </view>
-
       <view class="line"></view>
-
       <!--密码-->
       <view class="inputView">
-        <image class="keyImage" src="http://47.102.223.176/images/password.png"></image>
+        <image class="keyImage" src="http://47.102.223.176/images/password2.png"></image>
         <label class="loginLabel">密码</label>
         <input name="password" value='123' class="inputText" password="true" placeholder="请输入密码" />
         <!-- <input name="password" class="inputText" password="true" placeholder="请输入密码" /> -->
       </view>
+      <view class="line"></view>
 
       <!--按钮-->
       <view>
-        <button class="loginBtn" type="primary" form-type='submit' style="background: #87CEFA;">登录</button>
+        <button class="loginBtn" type="primary" form-type='submit' style="background: #f64b3c;">登录</button>
       </view>
 
       <view>
@@ -35,7 +34,7 @@
   </view>
 </view>
 <!-- 模板按钮 -->
-<view class="container" style="background-color: white;position:fixed; bottom:0px; width: 100%;">
+<view class="container" style="background-color: #1e0a18;position:fixed; bottom:0px; width: 100%;">
   <!-- 设置模板名称 -->
   <!-- 将数据通过data赋值传入 -->
   <!-- 前面三个冒号代表这是一个对象需展开 -->

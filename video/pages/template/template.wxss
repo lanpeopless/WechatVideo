@@ -1,4 +1,4 @@
 
 .box {
-  background: #36bbb5;
+  background: none;
 }

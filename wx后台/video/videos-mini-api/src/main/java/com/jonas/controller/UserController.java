@@ -24,7 +24,7 @@ import java.io.InputStream;
  * @date 2019-03-10 15:36
  */
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/video/user")
 @Api(value = "用户相关业务的接口",tags = {"用户相关业务的controller"})
 public class UserController extends BasicController {
     @Autowired

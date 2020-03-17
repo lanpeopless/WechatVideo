@@ -10,6 +10,9 @@ import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.util.Enumeration;
 
+/**
+ * 获取IP地址
+ */
 public class Ip {
     static Logger logger = LoggerFactory.getLogger(Ip.class);
 
@@ -45,6 +48,10 @@ public class Ip {
             }
         }
         return null;
+    }
+
+    public static void main(String[] args) throws SocketException {
+        System.out.println(Ip.getFirstNonLoopbackAddress());
     }
 
 }

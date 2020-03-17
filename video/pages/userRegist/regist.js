@@ -1,3 +1,5 @@
+const http = require('../../config/httpRequest.js');
+const utils = require('../../utils/utils.js');
 const app = getApp()
 
 Page({
@@ -8,7 +10,7 @@ Page({
     var formObject = e.detail.value;
     var username = formObject.username;
     var password = formObject.password;
-    if (username.length == 0 || password.length == 0) {
+    if (utils.isEmpty(username) || utils.isEmpty(password)) {
       //提醒用户用户名或密码不为空
       wx.showToast({
         title: '用户名或密码不为空',
@@ -18,26 +20,19 @@ Page({
       })
     } else {
       // 向后台发起请求，注册用户信息
-      var serverUrl = app.serverUrl;
-      wx.showLoading({
-        title: '请等待',
-      });
-      wx.request({
-        url: serverUrl + '/register',
-        method: "POST",
-        data: {
+      http.requestUrl({
+        url: app.requestInfo.user.register.url,
+        method: app.requestInfo.user.register.method,
+        params: {
           username: username,
           password: password
-        },
-        header: {
-          'content-type': 'application/json' // 默认值
-        },
-        success(res) {
-          if (res.data.status == 200) {
+        }
+      }).then(res => {
+          if (res.code == 'ok') {
             wx.hideLoading();
-            app.userInfo = res.data.data;
+            app.userInfo = res.data;
             // 添加本地缓存
-            app.setGlobalUserInfo(res.data.data);
+            app.setGlobalUserInfo(res.data);
             wx.showToast({
               title: '注册成功',
               icon: 'success',
@@ -53,14 +48,13 @@ Page({
           } else {
             wx.hideLoading();
             wx.showToast({
-              title: '注册失败,' + res.data.msg,
+              title: '注册失败,' + res.message,
               icon: 'none',
               mask: true,
               duration: 2000
             })
           }
-        }
-      })
+        });
     }
 
   },    //事件处理函数

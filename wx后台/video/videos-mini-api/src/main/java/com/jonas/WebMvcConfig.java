@@ -19,7 +19,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
         //路径末尾的斜杠不能省略
         registry.addResourceHandler("/**")
         //上面的pathPatterns所对应的路径都会被处理成下面的两个资源路径
-                .addResourceLocations("classpath:/META-INF/resources/")//防止swaqger页面加载不出来
+                .addResourceLocations("classpath:/META-INF/resources/")//防止 swaqger 页面加载不出来
                 .addResourceLocations("file:/Video/UserFile/")
                 .addResourceLocations("file:/Video/BGM/");
     }

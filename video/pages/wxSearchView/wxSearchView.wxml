@@ -43,7 +43,7 @@
       <text wx:if="{{wxSearchData.hotKeys[0]}}" class="wxSearchTitle">搜索热点</text>
       <view class="wxSearchKeyList">
         <block wx:for="{{wxSearchData.hotKeys}}">
-          <view class="wxSearchKeyItem" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item}}</view>
+          <view class="wxSearchKeyItem" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item.content}}</view>
         </block>
       </view>
     </view>

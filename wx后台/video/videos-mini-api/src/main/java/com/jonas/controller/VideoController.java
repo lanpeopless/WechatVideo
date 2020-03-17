@@ -255,7 +255,7 @@ public class VideoController extends BasicController {
             // 该用户不喜欢该视频
             videoService.userUnLikeVideo(userId,videoId,videoCreatorId);
         }
-        return JSONResult.ok(videoService.getHotWords());
+        return JSONResult.ok();
     }
 
     @ApiOperation(value = "查询个人的视频列表页面", notes = "查询个人的视频列表页面")

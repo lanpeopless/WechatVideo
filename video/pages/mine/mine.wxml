@@ -36,31 +36,31 @@
 <!-- <view class="line"></view> -->
 <view class="container-video">
   <!-- 发布过的作品 -->
-  <view class="{{videoSelClass}} {{isSelectedWork}}" bindtap="doSelectWork">作品</view>
+  <view class="{{videoSelClass}} {{isSelectedWork}}" data-tab="work" bindtap="tabChange">作品</view>
   <!-- 收藏的点赞的视频 -->
-  <view class="{{videoSelClass}} {{isSelectedLike}}" bindtap="doSelectLike">收藏</view>
+  <view class="{{videoSelClass}} {{isSelectedLike}}" data-tab="like" bindtap="tabChange">收藏</view>
   <!-- 用户关注过人发表的视频 -->
-  <view class="{{videoSelClass}} {{isSelectedFollow}}" bindtap="doSelectFollow">关注</view>
+  <view class="{{videoSelClass}} {{isSelectedFollow}}" data-tab="follow" bindtap="tabChange">关注</view>
   
 </view>
   <view style="background-color:black;">
     <view wx:if="{{myWorkFalg}}">
       <block wx:for="{{videoList}}" wx:key="id">
-        <image src="{{serverUrl}}{{item.coverPath}}" class="videoImage" mode="aspectFill" bindtap="showVideo"
+        <image src="{{videoUrl}}{{item.coverPath}}" class="videoImage" mode="aspectFill" bindtap="showVideo"
           data-arrindex="{{index}}"></image>
       </block>
     </view>
     
     <view wx:if="{{myLikesFalg}}">
       <block wx:for="{{videoList}}" wx:key="id">
-        <image src="{{serverUrl}}{{item.coverPath}}" class="videoImage" mode="aspectFill" bindtap="showVideo"
+        <image src="{{videoUrl}}{{item.coverPath}}" class="videoImage" mode="aspectFill" bindtap="showVideo"
           data-arrindex="{{index}}"></image>
       </block>
     </view>
     
     <view wx:if="{{myFollowFalg}}">
       <block wx:for="{{videoList}}" wx:key="id">
-        <image src="{{serverUrl}}{{item.coverPath}}" class="videoImage" mode="aspectFill" bindtap="showVideo"
+        <image src="{{videoUrl}}{{item.coverPath}}" class="videoImage" mode="aspectFill" bindtap="showVideo"
           data-arrindex="{{index}}"></image>
       </block>
     </view>

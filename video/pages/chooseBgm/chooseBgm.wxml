@@ -5,7 +5,7 @@
           <block wx:for="{{bgmList}}">
             <view class="container">
               <audio name="{{item.name}}" author="{{item.author}}" src="{{serverUrl}}{{item.path}}" style="width:300px" id="myAudio" controls loop></audio>
-              <radio style="margin-top:20px;" color="#87CEFA" value="{{item.id}}"></radio>
+              <radio style="margin-top:20px;" color="#f64b3c" value="{{item.id}}"></radio>
             </view>
           </block>
         </radio-group>
@@ -16,7 +16,7 @@
         </view>
 
         <!-- 提交 -->
-        <button class="submitBtn" type="primary" form-type="submit" style="background: #87CEFA;">上传视频</button>
+        <button class="submitBtn" type="primary" form-type="submit" style="background: #f64b3c;">上传视频</button>
         
         <button class="gobackBtn" type="warn" form-type="reset" style="background: #AAAAAA;">重置</button>
     </form>

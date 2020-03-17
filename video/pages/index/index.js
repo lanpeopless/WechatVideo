@@ -1,5 +1,8 @@
 //index.js
 //获取应用实例
+const http = require('../../config/httpRequest.js');
+const utils = require('../../utils/utils.js');
+
 const app = getApp();
 const cameraContext = wx.createCameraContext(this);
 var searchValue;
@@ -22,6 +25,7 @@ Page({
     isOpenCamera:false,
     searchValue:'',
     arrIndex:0,
+    searchValue: '',
     mineVideo: [] //从个人界面点击进入的视频展示页面
   },
   showVideoInfo:function(event){
@@ -52,31 +56,30 @@ Page({
   //   this.getVideoByPage();
   //   wx.stopPullDownRefresh(); 
   // },
-  // onReachBottom:function(){
-  //   // 触底向后加载几个视频
-  //   var that = this;
-  //   var page = that.data.page;//当前页码
-  //   var totalPage = that.data.totalPage;//总页数
-  //   var records = that.data.records;//总记录数
-  //   var videoListCount = that.data.videoListCount;//当前记录数
-  //   var pageSize = that.data.pageSize;//当前页码大小
-  //   if (page < totalPage && videoListCount < records) {
-  //     // 如果当前页码小于总页码数且当前记录数小于总记录数则向后加载加载视频
-  //     that.setData({
-  //       page:page + 1
-  //     })
-  //     that.getVideoByPage();
-  //   }else {
-  //       wx.showToast({
-  //         title: '没视频了喔~',
-  //         icon: 'none',
-  //         mask: true,
-  //         duration: 1000
-  //       });
-  //     return;
-  //   }
-    
-  // },
+  onReachBottom:function(){
+    // 触底向后加载几个视频
+    var that = this;
+    var page = that.data.page;//当前页码
+    var totalPage = that.data.totalPage;//总页数
+    var records = that.data.records;//总记录数
+    var videoListCount = that.data.videoListCount;//当前记录数
+    var pageSize = that.data.pageSize;//当前页码大小
+    if (page < totalPage && videoListCount < records) {
+      // 如果当前页码小于总页码数且当前记录数小于总记录数则向后加载加载视频
+      that.setData({
+        page:page + 1
+      })
+      that.getVideoByPage();
+    }else {
+        wx.showToast({
+          title: '没视频了喔~',
+          icon: 'none',
+          mask: true,
+          duration: 1000
+        });
+      return;
+    }
+  },
   onLoad:function(param){    
     cameraContext.stopRecord();
     var that = this;
@@ -95,7 +98,8 @@ Page({
     that.setData({
       screenWidth: screenWidth,
       screenHeight: screenHeight,
-      pixelRatio:pixelRatio,
+      pixelRatio: pixelRatio,
+      searchValue: searchValue
     });
     if (searchValue == null || searchValue == undefined || searchValue == '' ){
       // 如果搜索关键词为空则执行查询所有视频（仅分页)
@@ -114,7 +118,7 @@ Page({
       that.setData({
         videoList:[]
       });
-      that.getVideoByDesc(searchValue);
+      that.getVideoByPage();
     }
     
   },
@@ -336,6 +340,7 @@ Page({
       },
     })
   },
+
   onShareAppMessage:function(param){
     console.log(param);
     
@@ -410,154 +415,157 @@ Page({
     wx.showLoading({
       title: '请等待',
     });
-    wx.request({
-        url: serverUrl + '/video/selectAllVideo', 
-        method: "POST",
-        data: {
-          page: page,
-          pageSize: pageSize,
-          currentUserId: currentUserId
-        },
-        header: {
-          'content-type': 'application/json' // 默认值
-        },
-        success(res) {
-          if (res.data.status == 200) {
-            var videoList = res.data.data.rows;
-            var videoListOld = that.data.videoList;
-            var videoListNew = videoListOld.concat(videoList);
-            var videoListCount = videoListNew.length;
-            var page = res.data.data.page;
-            var records = res.data.data.records;
-            var total = res.data.data.total;
-            if (videoListCount!=0) {
-              for (var i = 0;i < videoList.length; i++) {
-                videoList[i].check=false;
-              }
-              
-              that.setData({
-                videoList:videoListOld.concat(videoList),
-                serverUrl:serverUrl,
-                videoUrl:videoUrl,
-                page:page,
-                records:records,
-                totalPage:total,
-                videoListCount,videoListCount
-              });
-              wx.hideLoading();
-              
-              wx.showToast({
-                title: '加载成功',
-                icon: 'success',
-                mask: true,
-                duration: 1000
-              });
-            }else {
-              wx.showToast({
-                title: '视频库暂无视频',
-                icon: 'none',
-                mask: true,
-                duration: 1000
-              });
-            }
-          } else {
-            wx.hideLoading();
-            wx.showToast({
-              title: '加载失败' + res.data.msg,
-              icon: 'none',
-              mask: true,
-              duration: 2000
-            })
+    http.requestUrl({
+      url: app.requestInfo.video.selectVideoByCondition.url,
+      method: app.requestInfo.video.selectVideoByCondition.method,
+      params: {
+        pageNum : page,
+        pageSize : pageSize,
+        filterCauses : utils.isNotEmpty(that.data.searchValue) ? [
+          {
+            attributeName: 'videoDesc',
+            attributeType: 'like',
+            attributeValue: that.data.searchValue
           }
+        ] : [],
+        sortCauses: [
+        ]
+      },
+    }).then(res => {
+      if (res.code == 'ok') {
+        var videoList = res.data.table;
+        var videoListOld = that.data.videoList;
+        var videoListNew = videoListOld.concat(videoList);
+        var videoListCount = videoListNew.length;
+        var page = res.data.page;
+        var records = res.data.totalCount; // 总记录数
+        var total = records / that.data.pageSize; // 总页数
+        if (videoListCount!=0) {
+          for (var i = 0;i < videoList.length; i++) {
+            videoList[i].check=false;
+          }
+          
+          that.setData({
+            videoList:videoListOld.concat(videoList),
+            serverUrl:serverUrl,
+            videoUrl:videoUrl,
+            page:page,
+            records:records,
+            totalPage:total,
+            videoListCount,videoListCount
+          });
+          wx.hideLoading();
+          wx.showToast({
+            title: '加载成功',
+            icon: 'success',
+            mask: true,
+            duration: 1000
+          });
+        }else {
+          wx.showToast({
+            title: '视频库暂无视频',
+            icon: 'none',
+            mask: true,
+            duration: 1000
+          });
         }
-    })
+      } else {
+        wx.hideLoading();
+        wx.showToast({
+          title: '加载失败' + res.message,
+          icon: 'none',
+          mask: true,
+          duration: 2000
+        })
+      }
+    });
   },
   /**
    * 按视频描述查询视频
    */
-  getVideoByDesc:function(value){
-    var that = this;
-    const page = that.data.page;
-    const pageSize = that.data.pageSize;
-    const serverUrl = app.serverUrl;
-    const videoUrl = app.videoUrl;
+  // getVideoByDesc:function(value){
+  //   var that = this;
+  //   const page = that.data.page;
+  //   const pageSize = that.data.pageSize;
+  //   const serverUrl = app.serverUrl;
+  //   const videoUrl = app.videoUrl;
 
-    var userInfo = app.userInfo;
-    var currentUserId = null;
-    if(userInfo!=null){
-      currentUserId =  userInfo.id;
-    }
-    var videoList = new Array();
-    videoList.push({
-      videoDesc:value
-    })
+  //   var userInfo = app.userInfo;
+  //   var currentUserId = null;
+  //   if(userInfo!=null){
+  //     currentUserId =  userInfo.id;
+  //   }
+  //   var videoList = new Array();
+  //   videoList.push({
+  //     videoDesc:value
+  //   })
     
-    wx.showLoading({
-      title: '请等待',
-    });
-    wx.request({
-        url: serverUrl + '/video/selectVideoByCondition', 
-        method: "POST",
-        data: {
-          page: page,
-          pageSize: pageSize,
-          videoList:videoList,
-          currentUserId: currentUserId
-        },
-        header: {
-          'content-type': 'application/json' // 默认值
-        },
-        success(res) {
-          if (res.data.status == 200) {
-            var videoList = res.data.data.rows;
-            var videoListOld = that.data.videoList;
-            var videoListNew = videoListOld.concat(videoList);
-            var videoListCount = videoListNew.length;
-            var page = res.data.data.page;
-            var records = res.data.data.records;
-            var total = res.data.data.total;
-            if (videoListCount!=0) {
-              for (var i = 0;i < videoList.length; i++) {
-                videoList[i].check=false;
-              }
+  //   wx.showLoading({
+  //     title: '请等待',
+  //   });
+  //   wx.request({
+  //       url: serverUrl + '/video/selectVideoByCondition', 
+  //       method: "POST",
+  //       data: {
+  //         page: page,
+  //         pageSize: pageSize,
+  //         videoList:videoList,
+  //         currentUserId: currentUserId
+  //       },
+  //       header: {
+  //         'content-type': 'application/json' // 默认值
+  //       },
+  //       success(res) {
+  //         if (res.data.status == 200) {
+  //           var videoList = res.data.data.rows;
+  //           var videoListOld = that.data.videoList;
+  //           var videoListNew = videoListOld.concat(videoList);
+  //           var videoListCount = videoListNew.length;
+  //           var page = res.data.data.page;
+  //           var records = res.data.data.records;
+  //           var total = res.data.data.total;
+  //           if (videoListCount!=0) {
+  //             for (var i = 0;i < videoList.length; i++) {
+  //               videoList[i].check=false;
+  //             }
               
-              that.setData({
-                videoList:videoListOld.concat(videoList),
-                serverUrl:serverUrl,
-                videoUrl: videoUrl,
-                page:page,
-                records:records,
-                totalPage:total,
-                videoListCount,videoListCount
-              });
-              wx.hideLoading();
+  //             that.setData({
+  //               videoList:videoListOld.concat(videoList),
+  //               serverUrl:serverUrl,
+  //               videoUrl: videoUrl,
+  //               page:page,
+  //               records:records,
+  //               totalPage:total,
+  //               videoListCount,videoListCount
+  //             });
+  //             wx.hideLoading();
               
-              wx.showToast({
-                title: '加载成功',
-                icon: 'success',
-                mask: true,
-                duration: 1000
-              });
-            }else {
-              wx.showToast({
-                title: '视频库暂无视频',
-                icon: 'none',
-                mask: true,
-                duration: 1000
-              });
-            }
-          } else {
-            wx.hideLoading();
-            wx.showToast({
-              title: '加载失败' + res.data.msg,
-              icon: 'none',
-              mask: true,
-              duration: 2000
-            })
-          }
-        }
-    })
-  },
+  //             wx.showToast({
+  //               title: '加载成功',
+  //               icon: 'success',
+  //               mask: true,
+  //               duration: 1000
+  //             });
+  //           }else {
+  //             wx.showToast({
+  //               title: '视频库暂无视频',
+  //               icon: 'none',
+  //               mask: true,
+  //               duration: 1000
+  //             });
+  //           }
+  //         } else {
+  //           wx.hideLoading();
+  //           wx.showToast({
+  //             title: '加载失败' + res.data.msg,
+  //             icon: 'none',
+  //             mask: true,
+  //             duration: 2000
+  //           })
+  //         }
+  //       }
+  //   })
+  // },
   /**
    * 视频控制函数
    */

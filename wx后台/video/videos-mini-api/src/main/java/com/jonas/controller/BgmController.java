@@ -17,7 +17,7 @@ import java.util.List;
  * @date 2019-03-11 22:40
  */
 @RestController
-@RequestMapping("/bgm")
+@RequestMapping("/video/bgm")
 @Api(value = "BGM相关业务的接口",tags = {"用户相关业务的controller"})
 public class BgmController {
     @Autowired
